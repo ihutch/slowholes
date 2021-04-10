@@ -1,0 +1,197 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Graham et~al.(2016)Graham, Khotyaintsev, Vaivads, and
+  Andr{\'{e}}]{Graham2016}
+D~B Graham, Yu~V Khotyaintsev, A~Vaivads, and M~Andr{\'{e}}.
+\newblock {Electrostatic solitary waves and electrostatic waves at the
+  magnetopause}.
+\newblock \emph{Journal of Geophysical Research: Space Physics}, 121:\penalty0
+  3069--3092, 2016.
+
+\bibitem[Steinvall et~al.(2019)Steinvall, Khotyaintsev, Graham, Vaivads,
+  Lindqvist, Russell, and Burch]{Steinvall2019}
+K.~Steinvall, Yu.~V. Khotyaintsev, D.~B. Graham, A.~Vaivads, P.-A. Lindqvist,
+  C.~T. Russell, and J.~L. Burch.
+\newblock Multispacecraft analysis of electron holes.
+\newblock \emph{Geophysical Research Letters}, 46\penalty0 (1):\penalty0
+  55--63, 2019.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GL080757}.
+
+\bibitem[Lotekar et~al.(2020)Lotekar, Vasko, Mozer, Hutchinson, Artemyev, Bale,
+  Bonnell, Ergun, Giles, Khotyaintsev, Lindqvist, Russell, and
+  Strangeway]{Lotekar2020}
+A.~Lotekar, I.~Y. Vasko, F.~S. Mozer, I.~Hutchinson, A.~V. Artemyev, S.~D.
+  Bale, J.~W. Bonnell, R.~Ergun, B.~Giles, Yu.~V. Khotyaintsev, P.-A.
+  Lindqvist, C.~T. Russell, and R.~Strangeway.
+\newblock Multisatellite mms analysis of electron holes in the earth's
+  magnetotail: Origin, properties, velocity gap, and transverse instability.
+\newblock \emph{Journal of Geophysical Research: Space Physics}, 125\penalty0
+  (9):\penalty0 e2020JA028066, 2020.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020JA028066}.
+\newblock e2020JA028066 10.1029/2020JA028066.
+
+\bibitem[Schamel(1986)]{Schamel1986a}
+Hans Schamel.
+\newblock {Electrostatic Phase Space Structures in Theory and Experiment}.
+\newblock \emph{Physics Reports}, 140\penalty0 (3):\penalty0 161--191, 1986.
+
+\bibitem[Hutchinson(2017)]{Hutchinson2017}
+I~H Hutchinson.
+\newblock {Electron holes in phase space: What they are and why they matter}.
+\newblock \emph{Physics of Plasmas}, 24\penalty0 (5):\penalty0 055601, may
+  2017.
+\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.4976854}.
+
+\bibitem[Hutchinson and Zhou(2016)]{Hutchinson2016}
+I~H Hutchinson and C~Zhou.
+\newblock {Plasma electron hole kinematics. I. Momentum conservation}.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (8):\penalty0 82101, 2016.
+\newblock URL \url{http://dx.doi.org/10.1063/1.4959870}.
+
+\bibitem[Zhou and Hutchinson(2016)]{Zhou2016}
+C~Zhou and I~H Hutchinson.
+\newblock {Plasma electron hole kinematics. II. Hole tracking Particle-In-Cell
+  simulation}.
+\newblock \emph{Physics of Plasmas}, 23\penalty0 (8):\penalty0 82102, 2016.
+\newblock URL \url{http://dx.doi.org/10.1063/1.4959871}.
+
+\bibitem[Zhou and Hutchinson(2017)]{Zhou2017}
+Chuteng Zhou and Ian~H Hutchinson.
+\newblock {Plasma electron hole ion-acoustic instability}.
+\newblock \emph{J. Plasma Phys.}, 83:\penalty0 90580501, 2017.
+
+\bibitem[Saeki and Rasmussen(1991)]{Saeki1991}
+Koichi Saeki and J~Juul Rasmussen.
+\newblock {Stationary solution of coupled electron hole and ion soliton in a
+  collisionless plasma}.
+\newblock \emph{Journal of the Physical Society of Japan}, 60\penalty0
+  (3):\penalty0 735--738, 1991.
+
+\bibitem[Saeki and Genma(1998)]{Saeki1998}
+Koichi Saeki and Hitoshi Genma.
+\newblock {Electron-Hole Disruption due to Ion Motion and Formation of Coupled
+  Electron Hole and Ion-Acoustic Soliton in a Plasma}.
+\newblock \emph{Physical Review Letters}, 80\penalty0 (6):\penalty0 1224--1227,
+  feb 1998.
+
+\bibitem[Zhou and Hutchinson(2018)]{Zhou2018}
+Chuteng Zhou and Ian~H. Hutchinson.
+\newblock {Dynamics of a slow electron hole coupled to an ion-acoustic
+  soliton}.
+\newblock \emph{Physics of Plasmas}, 25\penalty0 (8):\penalty0 082303, 2018.
+\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.5033859}.
+
+\bibitem[Norgren et~al.(2015{\natexlab{a}})Norgren, Andr{\'{e}}, Graham,
+  Khotyaintsev, and Vaivads]{Norgren2015}
+C~Norgren, M~Andr{\'{e}}, D~B Graham, Yu~V Khotyaintsev, and A~Vaivads.
+\newblock {Slow electron holes in multicomponent plasmas}.
+\newblock \emph{Geophysical Research Letters}, 42\penalty0 (18):\penalty0
+  7264--7272, 2015{\natexlab{a}}.
+
+\bibitem[Norgren et~al.(2015{\natexlab{b}})Norgren, Andr{\'{e}}, Vaivads, and
+  Khotyaintsev]{Norgren2015a}
+C~Norgren, M~Andr{\'{e}}, A~Vaivads, and Y~V Khotyaintsev.
+\newblock {Slow electron phase space holes: Magnetotail observations}.
+\newblock \emph{Geophysical Research Letters}, 42\penalty0 (6):\penalty0
+  1654--1661, 2015{\natexlab{b}}.
+
+\bibitem[Drake et~al.(2003)Drake, Swisdak, Cattell, Shay, Rogers, and
+  Zeiler]{Drake2003}
+J~F Drake, M~Swisdak, C~Cattell, M~A Shay, B~N Rogers, and A~Zeiler.
+\newblock {Formation of electron holes and particle energization during
+  magnetic reconnection.}
+\newblock \emph{Science (New York, N.Y.)}, 299\penalty0 (5608):\penalty0
+  873--877, 2003.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/12574625}.
+
+\bibitem[Eliasson and Shukla(2004)]{Eliasson2004}
+B~Eliasson and P~K Shukla.
+\newblock {Dynamics of electron holes in an electron-oxygen-ion plasma.}
+\newblock \emph{Physical Review Letters}, 93\penalty0 (4):\penalty0 45001, jul
+  2004.
+\newblock URL
+  \url{http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.93.045001}.
+
+\bibitem[Eliasson and Shukla(2006)]{Eliasson2006}
+B~Eliasson and P~K Shukla.
+\newblock {Formation and dynamics of coherent structures involving phase-space
+  vortices in plasmas}.
+\newblock \emph{Physics Reports}, 422\penalty0 (6):\penalty0 225--290, jan
+  2006.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S037015730500390X}.
+
+\bibitem[Haakonsen et~al.(2015)Haakonsen, Hutchinson, and Zhou]{Haakonsen2015}
+Christian~Bernt Haakonsen, Ian~H Hutchinson, and Chuteng Zhou.
+\newblock {Kinetic electron and ion instability of the lunar wake simulated at
+  physical mass ratio}.
+\newblock \emph{Physics of Plasmas}, 22\penalty0 (3):\penalty0 32311, mar 2015.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/pop/22/3/10.1063/1.4915525}.
+
+\bibitem[Dupree(1982)]{Dupree1982}
+Thomas~H Dupree.
+\newblock {Theory of phase-space density holes}.
+\newblock \emph{Physics of Fluids}, 25\penalty0 (2):\penalty0 277, 1982.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/pof1/25/2/10.1063/1.863734}.
+
+\bibitem[Mandal et~al.(2020)Mandal, Sharma, and Schamel]{Mandal2020}
+Debraj Mandal, Devendra Sharma, and Hans Schamel.
+\newblock Ultra slow electron holes in collisionless plasmas: Stability at high
+  ion temperature.
+\newblock \emph{Physics of Plasmas}, 27\penalty0 (2):\penalty0 022102, 2020.
+\newblock URL \url{https://doi.org/10.1063/1.5121530}.
+
+\bibitem[Dupree(1983)]{Dupree1983}
+T~H Dupree.
+\newblock {Growth of phase-space density holes}.
+\newblock \emph{Physics of Fluids}, 26\penalty0 (9):\penalty0 2460, 1983.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/pof1/26/9/10.1063/1.864430}.
+
+\bibitem[Bernstein et~al.(1957)Bernstein, Greene, and Kruskal]{Bernstein1957}
+I~B Bernstein, J~M Greene, and M~D Kruskal.
+\newblock {Exact nonlinear plasma oscillations}.
+\newblock \emph{Physical Review}, 108\penalty0 (4):\penalty0 546--550, 1957.
+\newblock URL
+  \url{http://journals.aps.org/pr/abstract/10.1103/PhysRev.108.546}.
+
+\bibitem[Raadu(1989)]{Raadu1989}
+M~A Raadu.
+\newblock {The physics of double layers and their role in astrophysics}.
+\newblock \emph{Physics reports}, 178\penalty0 (2):\penalty0 25--97, 1989.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0370157389901099}.
+
+\bibitem[Stringer(1964)]{Stringer1964}
+T~E Stringer.
+\newblock {Electrostatic instabilities in current-carrying and counterstreaming
+  plasmas}.
+\newblock \emph{Journal of Nuclear Energy. Part C, Plasma Physics}, 6:\penalty0
+  267--279, 1964.
+\newblock URL \url{http://iopscience.iop.org/0368-3281/6/3/305}.
+
+\bibitem[Fried and Wong(1966)]{Fried1966}
+B~D Fried and A~Y Wong.
+\newblock {Stability Limits for Longitudinal Waves In Ion Beam‐Plasma
+  Interaction}.
+\newblock \emph{Physics of Fluids (1958-1988)}, 9:\penalty0 1084--1089, 1966.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/pof1/9/6/10.1063/1.1761806}.
+
+\bibitem[Penrose(1960)]{Penrose1960}
+Oliver Penrose.
+\newblock {Electrostatic Instabilities of a Uniform Non-Maxwellian Plasma}.
+\newblock \emph{Physics of Fluids}, 3\penalty0 (2):\penalty0 258, 1960.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/pof1/3/2/10.1063/1.1706024}.
+
+\end{thebibliography}
