@@ -1,8 +1,10 @@
 #########################################################################
 # This makefile should build on linux provided it has access to the X11 library
 # which typically requires the development package, a fortran compiler,
-# and git. It won't work on MSWindows.
+# and git. It may work on Mac if XQuartz is present. It won't work on MSWindows.
 # Decide the FORTRAN compiler and create the accis graphics routines:
+ACCISPARENT:=$(realpath .)
+export ACCISPARENT
 include ACCIS.mk
 #########################################################################
 LIBRARIES := $(LIBRARIES)
@@ -54,5 +56,6 @@ OBJECTS=
 iondenofphi :
 
 clean :
-	rm -f *.o *.mod plot*.ps iondenofphi contribs
+	rm -f *.o *.mod plot*.ps iondenofphi contribs *.aux
+	rm -fr accis auto
 
