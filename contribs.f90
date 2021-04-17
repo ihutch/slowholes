@@ -13,7 +13,7 @@ do i=1,npts
    v(i)=v0+(i-1.)*dv
    f(i)=exp(-(v(i)-voff)**2/2.)
 enddo
-call pfset(3)
+call pfset(-3)
 call dcharsize(.02)
 call multiframe(2,1,2)
 call autoplot(v,f,npts)

@@ -10,7 +10,6 @@ include ACCIS.mk
 LIBRARIES := $(LIBRARIES)
 LIBDEPS := $(LIBDEPS)
 COMPILE-SWITCHES:=$(COMPILE-SWITCHES) -Wno-unused-dummy-argument
-# -fbounds-check
 #########################################################################
 OBJECTS=
 #########################################################################
@@ -56,6 +55,6 @@ OBJECTS=
 iondenofphi :
 
 clean :
-	rm -f *.o *.mod plot*.ps iondenofphi contribs *.aux
+	rm -f *.o *.mod plot*.ps iondenofphi contribs *.aux *synctex*
 	rm -fr accis auto
 

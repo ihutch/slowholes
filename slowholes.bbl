@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -111,6 +111,24 @@ J~F Drake, M~Swisdak, C~Cattell, M~A Shay, B~N Rogers, and A~Zeiler.
   873--877, 2003.
 \newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/12574625}.
 
+\bibitem[Khotyaintsev et~al.(2010)Khotyaintsev, Vaivads, Andr{\'{e}}, Fujimoto,
+  Retin{\`{o}}, and Owen]{Khotyaintsev2010}
+Yu~V Khotyaintsev, A~Vaivads, M~Andr{\'{e}}, M~Fujimoto, A~Retin{\`{o}}, and
+  C~J Owen.
+\newblock {Observations of slow electron holes at a magnetic reconnection
+  site}.
+\newblock \emph{Physical Review Letters}, 105\penalty0 (16):\penalty0 165002,
+  2010.
+
+\bibitem[Muschietti et~al.(1999)Muschietti, Roth, Ergun, and
+  Carlson]{Muschietti1999}
+L~Muschietti, I~Roth, R~E Ergun, and C~W Carlson.
+\newblock {Analysis and simulation of BGK electron holes}.
+\newblock \emph{Nonlinear Processes in Geophysics}, 6\penalty0 (3/4):\penalty0
+  211--219, 1999.
+\newblock URL
+  \url{http://www.nonlin-processes-geophys.net/6/211/1999/npg-6-211-1999.html}.
+
 \bibitem[Eliasson and Shukla(2004)]{Eliasson2004}
 B~Eliasson and P~K Shukla.
 \newblock {Dynamics of electron holes in an electron-oxygen-ion plasma.}
@@ -135,6 +153,17 @@ Christian~Bernt Haakonsen, Ian~H Hutchinson, and Chuteng Zhou.
 \newblock \emph{Physics of Plasmas}, 22\penalty0 (3):\penalty0 32311, mar 2015.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/pop/22/3/10.1063/1.4915525}.
+
+\bibitem[Kakad et~al.(2016)Kakad, Kakad, Anekallu, Lakhina, Omura, and
+  Fazakerley]{Kakad2016}
+Amar Kakad, Bharati Kakad, Chandrasekhar Anekallu, Gurbax Lakhina, Yoshiharu
+  Omura, and Andrew Fazakerley.
+\newblock Slow electrostatic solitary waves in earth's plasma sheet boundary
+  layer.
+\newblock \emph{Journal of Geophysical Research: Space Physics}, 121\penalty0
+  (5):\penalty0 4452--4465, 2016.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016JA022365}.
 
 \bibitem[Dupree(1982)]{Dupree1982}
 Thomas~H Dupree.

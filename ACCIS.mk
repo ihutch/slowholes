@@ -28,7 +28,7 @@ ACCISX=$(ACCISHOME)/libaccisX.a
 LIBPATH= -L $(ACCISHOME) -L.
 LIBRARIES = -laccisX -lX11
 LIBDEPS = $(ACCISHOME)/libaccisX.a
-COMPILE-SWITCHES = -Wall -O2
+COMPILE-SWITCHES := -Wall -O2
 #COMPILE-SWITCHES = -g -fbounds-check
 #########################################################################
 # Always check that the accis library is available and make it,

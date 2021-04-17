@@ -20,8 +20,6 @@ real, dimension(npar,ngmax) :: gpar
 real :: theta=0.,vt2=1.
 real, dimension(nvsmax,npsimax) :: fperxa
 real, dimension(nvsmax) :: vsa
-!integer :: nroots=0,nrootp=0
-!integer, dimension(nvsmax) :: iroots,irootp
 real, dimension(npsimax) :: psia
 integer, dimension(npsimax) :: icrsa,jtha
 integer :: nvs=nvsmax,npsi=npsimax,imultiscan=0,nframes=2
@@ -789,71 +787,75 @@ elseif(ng.eq.-1)then
 endif
 end subroutine mainidenofphi
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-subroutine scanvhvs
 ! Given the gpar parameters, scan the hole velocity calculating steady
 ! force.
+subroutine scanvhvs
 use idenofphi
+!use ISO_FORTRAN_ENV 
+integer STDERR
+!STDERR=ERROR_UNIT ! Use this if the following is broken.
+STDERR=0
 if(psi.eq.0)psi=.1
-nvh=1000
-nvs=10
-nvs=min(nvs,int(npsimax/2.))
+nvs=min(10,int(npsimax/2.))
 vsmax=2.5
 vsmin=0.
 denset1=1.-denset2
 jthresh=0
 vhcross=0.
-nroots=0
-iroots=0
 fperx=0.
+fperxm=0.
 joff=0
 v0=-(vsmax+3.0*sqrt(vt2set+vt2set2))           ! for fvinit
 dv=2.*abs(v0)/(nv+3)
-1 continue
-do j=1,nvs
-   vs=vsmin+(vsmax-vsmin)*j/nvs
-   write(0,'(i3,f6.3,$)')j,vs
-   ng=2
-   gpar(:,1)=[denset1, vs,vt2set,vt2set]
-   gpar(:,2)=[denset2,-vs,vt2set2,vt2set2]
-   call fvinit
-   fva(:,j+joff)=f(1:nv+1)
-   do i=1,nv+1
-      vhin=v(i)
-      call ForceOfX(psi,vhin,1)
+write(STDERR,*)
+niterk=4    ! Number of iterative refinements default 4.
+do k=1,niterk
+   write(STDERR,'(a,3f8.5)')'Finding threshold',vsmin,vsmax,(vsmax-vsmin)/nvs
+   jthresh=0
+   do j=1,nvs
+      vs=vsmin+(vsmax-vsmin)*j/nvs
+      write(STDERR,'(i3,f7.4,$)')j,vs
+      ng=2
+      gpar(:,1)=[denset1, vs,vt2set,vt2set]
+      gpar(:,2)=[denset2,-vs,vt2set2,vt2set2]
+      call fvinit
+      fva(:,j+joff)=f(1:nv+1)
+      do i=1,nv+1
+         vhin=v(i)
+         fperxm=fperx
+         call ForceOfX(psi,vhin,1)
 !   write(*,'(a,1f6.3,a,g11.4e1,a,g11.4e1,a,g11.4e1)')'psi=',psi  &
 !        ,' Force=',f0,' vhin=',vhin,' dForce/dx=',fperx
-      forcea(i,j+joff)=f0/psi**2
-      delfrcdelx(i,j+joff)=fperx/psi**2
-      if(i.gt.2)then
-!         if(forcea(i,j+joff)*forcea(i-1,j+joff).lt.-1.e-10)then
-         if(forcea(i,j+joff).le.0.and.forcea(i-1,j+joff).gt.1.e-5)then
-!            write(*,'(2f7.3,i4,a,g10.3e1,a)')vs,vhin,i,' @ F=0 dFdx=',fperx
-            if(fperx.lt.0.and.jthresh.eq.0)then
-               write(0,'(/,a,f7.3,a,f7.3,i4,a,2g10.3e1,a,2g10.3e1)')&
-                    & 'vshift=',vs ,' vhole=',vhin,i,', F''s='&
-                    &,forcea(i-1,j+joff) ,forcea(i,j+joff),', dFdx='&
-                    &,fperx
-               jthresh=j+joff
-               icross=i
-               vhcross=vhin
+         forcea(i,j+joff)=f0/psi**2
+         delfrcdelx(i,j+joff)=fperx/psi**2
+         if(i.gt.2)then
+            if(forcea(i,j+joff).le.0.and.forcea(i-1,j+joff).gt.1.e-5)then
+               if(fperx.lt.0.and.jthresh.eq.0)then
+                  write(STDERR,'(/,a,f7.3,a,f7.3,i4,a,2g10.3e1,a,2g10.3e1)')&
+                       & 'vshift=',vs ,' vhole=',vhin,i,', F''s='&
+                       &,forcea(i-1,j+joff) ,forcea(i,j+joff),', dFdx='&
+                       &,fperx
+                  jthresh=j
+                  icross=i
+                  vhcross=vhin
+!                  write(STDERR,*)'joff,jthresh',joff,jthresh,fperxm,fperx
+                  if(joff.gt.0.and.k.lt.niterk)exit ! Shortcuts
+               endif
             endif
          endif
-      endif
+      enddo
+     ! Always complete first vs scan, but then don't bother when joff>0.
+      if(joff.gt.0.and.jthresh.gt.0)exit
    enddo
-   if(joff.gt.0.and.jthresh.gt.0)exit  ! Don't bother higher vs for thresh.
-enddo
-if(joff.eq.0)then 
-!Refine by setting vsmax=vthresh and vsmin=vs(jthresh-1), and doing over.
-   joff=nvs
+! Refine by setting vsmax=vthresh and vsmin=vs(jthresh-1), and doing over.
    vmx=vsmax
-   vsmax=vsmin+(vsmax-vsmin)*jthresh/float(nvs)
-   vsmin=vsmin+(vmx-vsmin)*(jthresh-1)/float(nvs)
-   write(0,'(/,a,3f7.3)')'Refining threshold',vsmin,vsmax,(vsmax-vsmin)/nvs
-   jthresh=0
-   goto 1
-else
-   vs=vsmin+(vsmax-vsmin)*(jthresh-joff)/float(nvs)
-endif
+   vsmax=vsmin+(vsmax-vsmin)*(jthresh+.001)/float(nvs)
+   vsmin=vsmin+(vmx-vsmin)*(jthresh-1.001)/float(nvs)
+   if(joff.eq.0)write(STDERR,*)
+   joff=nvs
+enddo
+vs=vsmin+(vsmax-vsmin)*(jthresh)/float(nvs)
+jthresh=jthresh+joff
 
 if(lplotfv)then
    call ForceOfX(psi,(v(icross)+v(icross-1))/2.,1)
@@ -864,29 +866,32 @@ if(lplotfv)then
    call pltend
 endif
 
-if(jthresh.gt.0)then
-   fva(:,nvs+1)=fva(:,jthresh)   ! Put threshold case in nvs+1
+if(jthresh.gt.1+nvs)then    !Put interpolated threshold case in nvs+1
+   ffp=abs(fperxm)/(abs(fperxm)+abs(fperx))
+   fva(:,nvs+1)=(ffp*fva(:,jthresh)+(1.-ffp)*fva(:,jthresh-1))
+   forcea(:,nvs+1)=(ffp*forcea(:,jthresh)+(1.-ffp)*forcea(:,jthresh-1))
+   delfrcdelx(:,nvs+1)=(ffp*delfrcdelx(:,jthresh)+(1.-ffp)&
+        &*delfrcdelx(:,jthresh-1))
+elseif(jthresh.gt.0)then   ! Put threshold case in nvs+1
+   fva(:,nvs+1)=fva(:,jthresh)
    forcea(:,nvs+1)=forcea(:,jthresh)
    delfrcdelx(:,nvs+1)=delfrcdelx(:,jthresh)
 endif
-!write(*,'(2i4,8f8.4)')jthresh,icross,forcea(icross,jthresh-1)&
-!     &,forcea(icross-1,jthresh),delfrcdelx(icross,jthresh)&
-!     &,delfrcdelx(icross,jthresh-1),vsmin,vsmax,vs
 if(denset1.eq.denset2.and.vt2set.eq.vt2set2)vhcross=0.
 
 write(*,'(a,f6.3,a,f6.3,a,f7.3,a,f7.3)')'Threshold for psi=',psi,'&
      & stable vh=',vhcross,' vb/sqrt(T1)=',gpar(2,1)/sqrt(gpar(4,1))
-write(*,'(a,8f8.4)')'gpars:',gpar(:,1),gpar(:,2)
+write(STDERR,'(a,8f8.4)')'gpars:',gpar(:,1),gpar(:,2)
 
 call ionionstab
-
 ! Do plot:
 if(lscanplot)then
 
 call dcharsize(.022)
 call multiframe(3,1,1)
-!call autoinit(v(1),fva(1,1),nv+1)
-call manautoinit(v(1),fva(1,1),nv+1,3,v(1),v(nv+1),symin,symax)
+!call manautoinit(v(1),fva(1,1),nv+1,3,v(1),v(nv+1),symin,symax)
+call minmax(fva(1,1),nv,fmin,fmax)
+call pltinit(v(1),v(nv+1),fmin,1.05*fmax)
 call axis; call axis2
 call axlabels('','!Bf!@(!Bv!@)')
 call legendline(.48,1.07,258,'!Bv!@')
@@ -900,7 +905,8 @@ call polyline([vhcross,vhcross],[0.,1.],2)
 if(jthresh.gt.0)call polymark(v(1),fva(1,nvs+1),nv+1,3)
 call legendline(.94,.9,258,'(i)')
 
-call manautonotop(v(1),forcea(1,1),nv+1,3,v(1),v(nv+1),symin,symax)
+call minmax(forcea(1,1),nv,fmin,fmax)
+call pltinit(v(1),v(nv+1),1.1*fmin,1.1*fmax)
 call axis; call axis2
 call axlabels('','F/!Ay!@!u2!u')
 do j=1,nvs
@@ -914,7 +920,8 @@ if(jthresh.gt.0)call polymark(v(1),forcea(1,nvs+1),nv+1,3)
 call polyline([v(1),v(nv+1)],[0.,0.],2)
 call legendline(.93,.9,258,'(ii)')
 
-call manautonotop(v(1),delfrcdelx(1,1),nv+1,3,v(1),v(nv+1),symin,symax)
+call minmax(delfrcdelx(1,1),nv,fmin,fmax)
+call pltinit(v(1),v(nv+1),1.3*fmin,1.05*fmax)
 call axis; call axis2
 call axlabels('!Bv!@!dh!d','!Ad!@F/!Ad!@x/!Ay!@!u2!u')
 do j=1,nvs
@@ -929,7 +936,6 @@ call polyline([v(1),v(nv+1)],[0.,0.],2)
 call legendline(.92,.9,258,'(iii)')
 call multiframe(0,0,0)
 call accisflush
-
 endif
 
 end subroutine scanvhvs
@@ -1018,7 +1024,7 @@ do i=1,nT2
          Tthresh=i+.2*j
       else
          call scanvhvs
-         call prtend   ! We don't pause for viewing here.
+         call prtend(' ')  ! We don't pause for viewing here.
       endif
 !      write(*,*)Tthresh
       Tthresha(i,j)=min(Tthresh,thmax)
