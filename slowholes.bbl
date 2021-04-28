@@ -1,226 +1,423 @@
-\begin{thebibliography}{28}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Graham et~al.(2016)Graham, Khotyaintsev, Vaivads, and
-  Andr{\'{e}}]{Graham2016}
-D~B Graham, Yu~V Khotyaintsev, A~Vaivads, and M~Andr{\'{e}}.
-\newblock {Electrostatic solitary waves and electrostatic waves at the
-  magnetopause}.
-\newblock \emph{Journal of Geophysical Research: Space Physics}, 121:\penalty0
-  3069--3092, 2016.
-
-\bibitem[Steinvall et~al.(2019)Steinvall, Khotyaintsev, Graham, Vaivads,
-  Lindqvist, Russell, and Burch]{Steinvall2019}
-K.~Steinvall, Yu.~V. Khotyaintsev, D.~B. Graham, A.~Vaivads, P.-A. Lindqvist,
-  C.~T. Russell, and J.~L. Burch.
-\newblock Multispacecraft analysis of electron holes.
-\newblock \emph{Geophysical Research Letters}, 46\penalty0 (1):\penalty0
-  55--63, 2019.
-\newblock URL
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GL080757}.
-
-\bibitem[Lotekar et~al.(2020)Lotekar, Vasko, Mozer, Hutchinson, Artemyev, Bale,
-  Bonnell, Ergun, Giles, Khotyaintsev, Lindqvist, Russell, and
-  Strangeway]{Lotekar2020}
-A.~Lotekar, I.~Y. Vasko, F.~S. Mozer, I.~Hutchinson, A.~V. Artemyev, S.~D.
-  Bale, J.~W. Bonnell, R.~Ergun, B.~Giles, Yu.~V. Khotyaintsev, P.-A.
-  Lindqvist, C.~T. Russell, and R.~Strangeway.
-\newblock Multisatellite mms analysis of electron holes in the earth's
-  magnetotail: Origin, properties, velocity gap, and transverse instability.
-\newblock \emph{Journal of Geophysical Research: Space Physics}, 125\penalty0
-  (9):\penalty0 e2020JA028066, 2020.
-\newblock URL
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020JA028066}.
-\newblock e2020JA028066 10.1029/2020JA028066.
-
-\bibitem[Schamel(1986)]{Schamel1986a}
-Hans Schamel.
-\newblock {Electrostatic Phase Space Structures in Theory and Experiment}.
-\newblock \emph{Physics Reports}, 140\penalty0 (3):\penalty0 161--191, 1986.
-
-\bibitem[Hutchinson(2017)]{Hutchinson2017}
-I~H Hutchinson.
-\newblock {Electron holes in phase space: What they are and why they matter}.
-\newblock \emph{Physics of Plasmas}, 24\penalty0 (5):\penalty0 055601, may
-  2017.
-\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.4976854}.
-
-\bibitem[Hutchinson and Zhou(2016)]{Hutchinson2016}
-I~H Hutchinson and C~Zhou.
-\newblock {Plasma electron hole kinematics. I. Momentum conservation}.
-\newblock \emph{Physics of Plasmas}, 23\penalty0 (8):\penalty0 82101, 2016.
-\newblock URL \url{http://dx.doi.org/10.1063/1.4959870}.
-
-\bibitem[Zhou and Hutchinson(2016)]{Zhou2016}
-C~Zhou and I~H Hutchinson.
-\newblock {Plasma electron hole kinematics. II. Hole tracking Particle-In-Cell
-  simulation}.
-\newblock \emph{Physics of Plasmas}, 23\penalty0 (8):\penalty0 82102, 2016.
-\newblock URL \url{http://dx.doi.org/10.1063/1.4959871}.
-
-\bibitem[Zhou and Hutchinson(2017)]{Zhou2017}
-Chuteng Zhou and Ian~H Hutchinson.
-\newblock {Plasma electron hole ion-acoustic instability}.
-\newblock \emph{J. Plasma Phys.}, 83:\penalty0 90580501, 2017.
-
-\bibitem[Saeki and Rasmussen(1991)]{Saeki1991}
-Koichi Saeki and J~Juul Rasmussen.
-\newblock {Stationary solution of coupled electron hole and ion soliton in a
-  collisionless plasma}.
-\newblock \emph{Journal of the Physical Society of Japan}, 60\penalty0
-  (3):\penalty0 735--738, 1991.
-
-\bibitem[Saeki and Genma(1998)]{Saeki1998}
-Koichi Saeki and Hitoshi Genma.
-\newblock {Electron-Hole Disruption due to Ion Motion and Formation of Coupled
-  Electron Hole and Ion-Acoustic Soliton in a Plasma}.
-\newblock \emph{Physical Review Letters}, 80\penalty0 (6):\penalty0 1224--1227,
-  feb 1998.
-
-\bibitem[Zhou and Hutchinson(2018)]{Zhou2018}
-Chuteng Zhou and Ian~H. Hutchinson.
-\newblock {Dynamics of a slow electron hole coupled to an ion-acoustic
-  soliton}.
-\newblock \emph{Physics of Plasmas}, 25\penalty0 (8):\penalty0 082303, 2018.
-\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.5033859}.
-
-\bibitem[Norgren et~al.(2015{\natexlab{a}})Norgren, Andr{\'{e}}, Graham,
-  Khotyaintsev, and Vaivads]{Norgren2015}
-C~Norgren, M~Andr{\'{e}}, D~B Graham, Yu~V Khotyaintsev, and A~Vaivads.
-\newblock {Slow electron holes in multicomponent plasmas}.
-\newblock \emph{Geophysical Research Letters}, 42\penalty0 (18):\penalty0
-  7264--7272, 2015{\natexlab{a}}.
-
-\bibitem[Norgren et~al.(2015{\natexlab{b}})Norgren, Andr{\'{e}}, Vaivads, and
-  Khotyaintsev]{Norgren2015a}
-C~Norgren, M~Andr{\'{e}}, A~Vaivads, and Y~V Khotyaintsev.
-\newblock {Slow electron phase space holes: Magnetotail observations}.
-\newblock \emph{Geophysical Research Letters}, 42\penalty0 (6):\penalty0
-  1654--1661, 2015{\natexlab{b}}.
-
-\bibitem[Drake et~al.(2003)Drake, Swisdak, Cattell, Shay, Rogers, and
-  Zeiler]{Drake2003}
-J~F Drake, M~Swisdak, C~Cattell, M~A Shay, B~N Rogers, and A~Zeiler.
-\newblock {Formation of electron holes and particle energization during
-  magnetic reconnection.}
-\newblock \emph{Science (New York, N.Y.)}, 299\penalty0 (5608):\penalty0
-  873--877, 2003.
-\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/12574625}.
-
-\bibitem[Khotyaintsev et~al.(2010)Khotyaintsev, Vaivads, Andr{\'{e}}, Fujimoto,
-  Retin{\`{o}}, and Owen]{Khotyaintsev2010}
-Yu~V Khotyaintsev, A~Vaivads, M~Andr{\'{e}}, M~Fujimoto, A~Retin{\`{o}}, and
-  C~J Owen.
-\newblock {Observations of slow electron holes at a magnetic reconnection
-  site}.
-\newblock \emph{Physical Review Letters}, 105\penalty0 (16):\penalty0 165002,
-  2010.
-
-\bibitem[Muschietti et~al.(1999)Muschietti, Roth, Ergun, and
-  Carlson]{Muschietti1999}
-L~Muschietti, I~Roth, R~E Ergun, and C~W Carlson.
-\newblock {Analysis and simulation of BGK electron holes}.
-\newblock \emph{Nonlinear Processes in Geophysics}, 6\penalty0 (3/4):\penalty0
-  211--219, 1999.
-\newblock URL
-  \url{http://www.nonlin-processes-geophys.net/6/211/1999/npg-6-211-1999.html}.
-
-\bibitem[Eliasson and Shukla(2004)]{Eliasson2004}
-B~Eliasson and P~K Shukla.
-\newblock {Dynamics of electron holes in an electron-oxygen-ion plasma.}
-\newblock \emph{Physical Review Letters}, 93\penalty0 (4):\penalty0 45001, jul
-  2004.
-\newblock URL
-  \url{http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.93.045001}.
-
-\bibitem[Eliasson and Shukla(2006)]{Eliasson2006}
-B~Eliasson and P~K Shukla.
-\newblock {Formation and dynamics of coherent structures involving phase-space
-  vortices in plasmas}.
-\newblock \emph{Physics Reports}, 422\penalty0 (6):\penalty0 225--290, jan
-  2006.
-\newblock URL
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S037015730500390X}.
-
-\bibitem[Haakonsen et~al.(2015)Haakonsen, Hutchinson, and Zhou]{Haakonsen2015}
-Christian~Bernt Haakonsen, Ian~H Hutchinson, and Chuteng Zhou.
-\newblock {Kinetic electron and ion instability of the lunar wake simulated at
-  physical mass ratio}.
-\newblock \emph{Physics of Plasmas}, 22\penalty0 (3):\penalty0 32311, mar 2015.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/pop/22/3/10.1063/1.4915525}.
-
-\bibitem[Kakad et~al.(2016)Kakad, Kakad, Anekallu, Lakhina, Omura, and
-  Fazakerley]{Kakad2016}
-Amar Kakad, Bharati Kakad, Chandrasekhar Anekallu, Gurbax Lakhina, Yoshiharu
-  Omura, and Andrew Fazakerley.
-\newblock Slow electrostatic solitary waves in earth's plasma sheet boundary
-  layer.
-\newblock \emph{Journal of Geophysical Research: Space Physics}, 121\penalty0
-  (5):\penalty0 4452--4465, 2016.
-\newblock URL
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016JA022365}.
-
-\bibitem[Dupree(1982)]{Dupree1982}
-Thomas~H Dupree.
-\newblock {Theory of phase-space density holes}.
-\newblock \emph{Physics of Fluids}, 25\penalty0 (2):\penalty0 277, 1982.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/pof1/25/2/10.1063/1.863734}.
-
-\bibitem[Mandal et~al.(2020)Mandal, Sharma, and Schamel]{Mandal2020}
-Debraj Mandal, Devendra Sharma, and Hans Schamel.
-\newblock Ultra slow electron holes in collisionless plasmas: Stability at high
-  ion temperature.
-\newblock \emph{Physics of Plasmas}, 27\penalty0 (2):\penalty0 022102, 2020.
-\newblock URL \url{https://doi.org/10.1063/1.5121530}.
-
-\bibitem[Dupree(1983)]{Dupree1983}
-T~H Dupree.
-\newblock {Growth of phase-space density holes}.
-\newblock \emph{Physics of Fluids}, 26\penalty0 (9):\penalty0 2460, 1983.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/pof1/26/9/10.1063/1.864430}.
-
-\bibitem[Bernstein et~al.(1957)Bernstein, Greene, and Kruskal]{Bernstein1957}
-I~B Bernstein, J~M Greene, and M~D Kruskal.
-\newblock {Exact nonlinear plasma oscillations}.
-\newblock \emph{Physical Review}, 108\penalty0 (4):\penalty0 546--550, 1957.
-\newblock URL
-  \url{http://journals.aps.org/pr/abstract/10.1103/PhysRev.108.546}.
-
-\bibitem[Raadu(1989)]{Raadu1989}
-M~A Raadu.
-\newblock {The physics of double layers and their role in astrophysics}.
-\newblock \emph{Physics reports}, 178\penalty0 (2):\penalty0 25--97, 1989.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/0370157389901099}.
-
-\bibitem[Stringer(1964)]{Stringer1964}
-T~E Stringer.
-\newblock {Electrostatic instabilities in current-carrying and counterstreaming
-  plasmas}.
-\newblock \emph{Journal of Nuclear Energy. Part C, Plasma Physics}, 6:\penalty0
-  267--279, 1964.
-\newblock URL \url{http://iopscience.iop.org/0368-3281/6/3/305}.
-
-\bibitem[Fried and Wong(1966)]{Fried1966}
-B~D Fried and A~Y Wong.
-\newblock {Stability Limits for Longitudinal Waves In Ion Beam‐Plasma
-  Interaction}.
-\newblock \emph{Physics of Fluids (1958-1988)}, 9:\penalty0 1084--1089, 1966.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/pof1/9/6/10.1063/1.1761806}.
-
-\bibitem[Penrose(1960)]{Penrose1960}
-Oliver Penrose.
-\newblock {Electrostatic Instabilities of a Uniform Non-Maxwellian Plasma}.
-\newblock \emph{Physics of Fluids}, 3\penalty0 (2):\penalty0 258, 1960.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/pof1/3/2/10.1063/1.1706024}.
-
-\end{thebibliography}
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{31}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Graham}\ \emph {et~al.}(2016)\citenamefont {Graham},
+  \citenamefont {Khotyaintsev}, \citenamefont {Vaivads},\ and\ \citenamefont
+  {Andr{\'{e}}}}]{Graham2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~B.}\ \bibnamefont
+  {Graham}}, \bibinfo {author} {\bibfnamefont {Y.~V.}\ \bibnamefont
+  {Khotyaintsev}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Vaivads}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Andr{\'{e}}}},\ }\bibfield  {title} {\bibinfo {title} {{Electrostatic
+  solitary waves and electrostatic waves at the magnetopause}},\ }\href
+  {https://doi.org/10.1002/2015JA021527} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Geophysical Research: Space Physics}\ }\textbf
+  {\bibinfo {volume} {121}},\ \bibinfo {pages} {3069} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Steinvall}\ \emph {et~al.}(2019)\citenamefont
+  {Steinvall}, \citenamefont {Khotyaintsev}, \citenamefont {Graham},
+  \citenamefont {Vaivads}, \citenamefont {Lindqvist}, \citenamefont {Russell},\
+  and\ \citenamefont {Burch}}]{Steinvall2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Steinvall}}, \bibinfo {author} {\bibfnamefont {Y.~V.}\ \bibnamefont
+  {Khotyaintsev}}, \bibinfo {author} {\bibfnamefont {D.~B.}\ \bibnamefont
+  {Graham}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Vaivads}},
+  \bibinfo {author} {\bibfnamefont {P.-A.}\ \bibnamefont {Lindqvist}}, \bibinfo
+  {author} {\bibfnamefont {C.~T.}\ \bibnamefont {Russell}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Burch}},\ }\bibfield  {title}
+  {\bibinfo {title} {Multispacecraft analysis of electron holes},\ }\href
+  {https://doi.org/https://doi.org/10.1029/2018GL080757} {\bibfield  {journal}
+  {\bibinfo  {journal} {Geophysical Research Letters}\ }\textbf {\bibinfo
+  {volume} {46}},\ \bibinfo {pages} {55} (\bibinfo {year} {2019})},\ \Eprint
+  {https://arxiv.org/abs/https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2018GL080757}
+  {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2018GL080757}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lotekar}\ \emph {et~al.}(2020)\citenamefont
+  {Lotekar}, \citenamefont {Vasko}, \citenamefont {Mozer}, \citenamefont
+  {Hutchinson}, \citenamefont {Artemyev}, \citenamefont {Bale}, \citenamefont
+  {Bonnell}, \citenamefont {Ergun}, \citenamefont {Giles}, \citenamefont
+  {Khotyaintsev}, \citenamefont {Lindqvist}, \citenamefont {Russell},\ and\
+  \citenamefont {Strangeway}}]{Lotekar2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Lotekar}}, \bibinfo {author} {\bibfnamefont {I.~Y.}\ \bibnamefont {Vasko}},
+  \bibinfo {author} {\bibfnamefont {F.~S.}\ \bibnamefont {Mozer}}, \bibinfo
+  {author} {\bibfnamefont {I.}~\bibnamefont {Hutchinson}}, \bibinfo {author}
+  {\bibfnamefont {A.~V.}\ \bibnamefont {Artemyev}}, \bibinfo {author}
+  {\bibfnamefont {S.~D.}\ \bibnamefont {Bale}}, \bibinfo {author}
+  {\bibfnamefont {J.~W.}\ \bibnamefont {Bonnell}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Ergun}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {Giles}}, \bibinfo {author} {\bibfnamefont {Y.~V.}\
+  \bibnamefont {Khotyaintsev}}, \bibinfo {author} {\bibfnamefont {P.-A.}\
+  \bibnamefont {Lindqvist}}, \bibinfo {author} {\bibfnamefont {C.~T.}\
+  \bibnamefont {Russell}},\ and\ \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Strangeway}},\ }\bibfield  {title} {\bibinfo {title}
+  {Multisatellite mms analysis of electron holes in the earth's magnetotail:
+  Origin, properties, velocity gap, and transverse instability},\ }\href
+  {https://doi.org/10.1029/2020JA028066} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Geophysical Research: Space Physics}\ }\textbf
+  {\bibinfo {volume} {125}},\ \bibinfo {pages} {e2020JA028066} (\bibinfo {year}
+  {2020})},\ \bibinfo {note} {e2020JA028066 10.1029/2020JA028066},\ \Eprint
+  {https://arxiv.org/abs/https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020JA028066}
+  {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020JA028066}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schamel}(1986)}]{Schamel1986a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Schamel}},\ }\bibfield  {title} {\bibinfo {title} {{Electrostatic Phase
+  Space Structures in Theory and Experiment}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics Reports}\ }\textbf {\bibinfo {volume}
+  {140}},\ \bibinfo {pages} {161} (\bibinfo {year} {1986})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Hutchinson}(2017)}]{Hutchinson2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Hutchinson}},\ }\bibfield  {title} {\bibinfo {title} {{Electron holes in
+  phase space: What they are and why they matter}},\ }\href
+  {https://doi.org/10.1063/1.4976854} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Plasmas}\ }\textbf {\bibinfo {volume} {24}},\ \bibinfo
+  {pages} {055601} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hutchinson}\ and\ \citenamefont
+  {Zhou}(2016)}]{Hutchinson2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Hutchinson}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Zhou}},\ }\bibfield  {title} {\bibinfo {title} {{Plasma electron hole
+  kinematics. I. Momentum conservation}},\ }\href
+  {https://doi.org/10.1063/1.4959870} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Plasmas}\ }\textbf {\bibinfo {volume} {23}},\ \bibinfo
+  {pages} {82101} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhou}\ and\ \citenamefont
+  {Hutchinson}(2016)}]{Zhou2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Zhou}}\ and\ \bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Hutchinson}},\ }\bibfield  {title} {\bibinfo {title} {{Plasma electron hole
+  kinematics. II. Hole tracking Particle-In-Cell simulation}},\ }\href
+  {https://doi.org/10.1063/1.4959871} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Plasmas}\ }\textbf {\bibinfo {volume} {23}},\ \bibinfo
+  {pages} {82102} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhou}\ and\ \citenamefont
+  {Hutchinson}(2017)}]{Zhou2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Zhou}}\ and\ \bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Hutchinson}},\ }\bibfield  {title} {\bibinfo {title} {{Plasma electron hole
+  ion-acoustic instability}},\ }\href
+  {https://doi.org/10.1017/S0022377817000678} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Plasma Phys.}\ }\textbf {\bibinfo {volume} {83}},\ \bibinfo
+  {pages} {90580501} (\bibinfo {year} {2017})},\ \Eprint
+  {https://arxiv.org/abs/arXiv:1701.03140v1} {arXiv:arXiv:1701.03140v1}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Davidson}(1972)}]{Davidson1972}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~C.}\ \bibnamefont
+  {Davidson}},\ }\href@noop {} {\emph {\bibinfo {title} {{Methods in Nonlinear
+  Plasma Theory}}}}\ (\bibinfo  {publisher} {Academic Press},\ \bibinfo
+  {address} {New York},\ \bibinfo {year} {1972})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Saeki}\ and\ \citenamefont
+  {Rasmussen}(1991)}]{Saeki1991}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Saeki}}\ and\ \bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
+  {Rasmussen}},\ }\bibfield  {title} {\bibinfo {title} {{Stationary solution of
+  coupled electron hole and ion soliton in a collisionless plasma}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of the
+  Physical Society of Japan}\ }\textbf {\bibinfo {volume} {60}},\ \bibinfo
+  {pages} {735} (\bibinfo {year} {1991})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Saeki}\ and\ \citenamefont
+  {Genma}(1998)}]{Saeki1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Saeki}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Genma}},\
+  }\bibfield  {title} {\bibinfo {title} {{Electron-Hole Disruption due to Ion
+  Motion and Formation of Coupled Electron Hole and Ion-Acoustic Soliton in a
+  Plasma}},\ }\href {https://doi.org/10.1103/PhysRevLett.80.1224} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
+  {volume} {80}},\ \bibinfo {pages} {1224} (\bibinfo {year}
+  {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhou}\ and\ \citenamefont
+  {Hutchinson}(2018)}]{Zhou2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Zhou}}\ and\ \bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Hutchinson}},\ }\bibfield  {title} {\bibinfo {title} {{Dynamics of a slow
+  electron hole coupled to an ion-acoustic soliton}},\ }\href
+  {https://doi.org/10.1063/1.5033859} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Plasmas}\ }\textbf {\bibinfo {volume} {25}},\ \bibinfo
+  {pages} {082303} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Norgren}\ \emph
+  {et~al.}(2015{\natexlab{a}})\citenamefont {Norgren}, \citenamefont
+  {Andr{\'{e}}}, \citenamefont {Graham}, \citenamefont {Khotyaintsev},\ and\
+  \citenamefont {Vaivads}}]{Norgren2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Norgren}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Andr{\'{e}}}}, \bibinfo {author} {\bibfnamefont {D.~B.}\ \bibnamefont
+  {Graham}}, \bibinfo {author} {\bibfnamefont {Y.~V.}\ \bibnamefont
+  {Khotyaintsev}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Vaivads}},\ }\bibfield  {title} {\bibinfo {title} {{Slow electron holes in
+  multicomponent plasmas}},\ }\href {https://doi.org/10.1002/2015GL065390}
+  {\bibfield  {journal} {\bibinfo  {journal} {Geophysical Research Letters}\
+  }\textbf {\bibinfo {volume} {42}},\ \bibinfo {pages} {7264} (\bibinfo {year}
+  {2015}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Norgren}\ \emph
+  {et~al.}(2015{\natexlab{b}})\citenamefont {Norgren}, \citenamefont
+  {Andr{\'{e}}}, \citenamefont {Vaivads},\ and\ \citenamefont
+  {Khotyaintsev}}]{Norgren2015a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Norgren}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Andr{\'{e}}}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Vaivads}},\ and\ \bibinfo {author} {\bibfnamefont {Y.~V.}\ \bibnamefont
+  {Khotyaintsev}},\ }\bibfield  {title} {\bibinfo {title} {{Slow electron phase
+  space holes: Magnetotail observations}},\ }\href
+  {https://doi.org/10.1002/2015GL063218} {\bibfield  {journal} {\bibinfo
+  {journal} {Geophysical Research Letters}\ }\textbf {\bibinfo {volume} {42}},\
+  \bibinfo {pages} {1654} (\bibinfo {year} {2015}{\natexlab{b}})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Drake}\ \emph {et~al.}(2003)\citenamefont {Drake},
+  \citenamefont {Swisdak}, \citenamefont {Cattell}, \citenamefont {Shay},
+  \citenamefont {Rogers},\ and\ \citenamefont {Zeiler}}]{Drake2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Drake}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Swisdak}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Cattell}}, \bibinfo
+  {author} {\bibfnamefont {M.~A.}\ \bibnamefont {Shay}}, \bibinfo {author}
+  {\bibfnamefont {B.~N.}\ \bibnamefont {Rogers}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Zeiler}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Formation of electron holes and particle energization during
+  magnetic reconnection.}},\ }\href {https://doi.org/10.1126/science.1080333}
+  {\bibfield  {journal} {\bibinfo  {journal} {Science (New York, N.Y.)}\
+  }\textbf {\bibinfo {volume} {299}},\ \bibinfo {pages} {873} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Khotyaintsev}\ \emph {et~al.}(2010)\citenamefont
+  {Khotyaintsev}, \citenamefont {Vaivads}, \citenamefont {Andr{\'{e}}},
+  \citenamefont {Fujimoto}, \citenamefont {Retin{\`{o}}},\ and\ \citenamefont
+  {Owen}}]{Khotyaintsev2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.~V.}\ \bibnamefont
+  {Khotyaintsev}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Vaivads}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Andr{\'{e}}}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Fujimoto}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Retin{\`{o}}}},\ and\ \bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Owen}},\ }\bibfield  {title} {\bibinfo {title} {{Observations of slow
+  electron holes at a magnetic reconnection site}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.105.165002} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume}
+  {105}},\ \bibinfo {pages} {165002} (\bibinfo {year} {2010})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Muschietti}\ \emph {et~al.}(1999)\citenamefont
+  {Muschietti}, \citenamefont {Roth}, \citenamefont {Ergun},\ and\
+  \citenamefont {Carlson}}]{Muschietti1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Muschietti}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Roth}},
+  \bibinfo {author} {\bibfnamefont {R.~E.}\ \bibnamefont {Ergun}},\ and\
+  \bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont {Carlson}},\
+  }\bibfield  {title} {\bibinfo {title} {{Analysis and simulation of BGK
+  electron holes}},\ }\href {https://doi.org/10.5194/npg-6-211-1999} {\bibfield
+   {journal} {\bibinfo  {journal} {Nonlinear Processes in Geophysics}\ }\textbf
+  {\bibinfo {volume} {6}},\ \bibinfo {pages} {211} (\bibinfo {year}
+  {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Eliasson}\ and\ \citenamefont
+  {Shukla}(2004)}]{Eliasson2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Eliasson}}\ and\ \bibinfo {author} {\bibfnamefont {P.~K.}\ \bibnamefont
+  {Shukla}},\ }\bibfield  {title} {\bibinfo {title} {{Dynamics of electron
+  holes in an electron-oxygen-ion plasma.}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.93.045001} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume}
+  {93}},\ \bibinfo {pages} {45001} (\bibinfo {year} {2004})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Eliasson}\ and\ \citenamefont
+  {Shukla}(2006)}]{Eliasson2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Eliasson}}\ and\ \bibinfo {author} {\bibfnamefont {P.~K.}\ \bibnamefont
+  {Shukla}},\ }\bibfield  {title} {\bibinfo {title} {{Formation and dynamics of
+  coherent structures involving phase-space vortices in plasmas}},\ }\href
+  {https://doi.org/10.1016/j.physrep.2005.10.003} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physics Reports}\ }\textbf {\bibinfo {volume} {422}},\
+  \bibinfo {pages} {225} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Haakonsen}\ \emph {et~al.}(2015)\citenamefont
+  {Haakonsen}, \citenamefont {Hutchinson},\ and\ \citenamefont
+  {Zhou}}]{Haakonsen2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~B.}\ \bibnamefont
+  {Haakonsen}}, \bibinfo {author} {\bibfnamefont {I.~H.}\ \bibnamefont
+  {Hutchinson}},\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Zhou}},\ }\bibfield  {title} {\bibinfo {title} {{Kinetic electron and ion
+  instability of the lunar wake simulated at physical mass ratio}},\ }\href
+  {https://doi.org/10.1063/1.4915525} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Plasmas}\ }\textbf {\bibinfo {volume} {22}},\ \bibinfo
+  {pages} {32311} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kakad}\ \emph {et~al.}(2016)\citenamefont {Kakad},
+  \citenamefont {Kakad}, \citenamefont {Anekallu}, \citenamefont {Lakhina},
+  \citenamefont {Omura},\ and\ \citenamefont {Fazakerley}}]{Kakad2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kakad}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Kakad}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Anekallu}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Lakhina}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Omura}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Fazakerley}},\ }\bibfield  {title}
+  {\bibinfo {title} {Slow electrostatic solitary waves in earth's plasma sheet
+  boundary layer},\ }\href
+  {https://doi.org/https://doi.org/10.1002/2016JA022365} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Geophysical Research: Space Physics}\
+  }\textbf {\bibinfo {volume} {121}},\ \bibinfo {pages} {4452} (\bibinfo {year}
+  {2016})},\ \Eprint
+  {https://arxiv.org/abs/https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/2016JA022365}
+  {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/2016JA022365}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dupree}(1982)}]{Dupree1982}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont
+  {Dupree}},\ }\bibfield  {title} {\bibinfo {title} {{Theory of phase-space
+  density holes}},\ }\href {https://doi.org/10.1063/1.863734} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics of Fluids}\ }\textbf {\bibinfo
+  {volume} {25}},\ \bibinfo {pages} {277} (\bibinfo {year} {1982})}\BibitemShut
+  {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {A recent paper\protect {\cite {Mandal2020}} reports Vlasov
+  simulations appearing to show for Maxwellian distributions at $T_i/T_e=10$
+  that self-acceleration is suppressed, and claims that high enough ion
+  temperature $T_i/T_e>3.5$ can reverse the ion density response. These claims
+  are proven by the present simple derivation to be incorrect. The simulation
+  code used is not self consistent and its results are contradicted by
+  simulations using a well established code. The analysis included to explain
+  its results is faulty.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Dupree}(1983)}]{Dupree1983}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont
+  {Dupree}},\ }\bibfield  {title} {\bibinfo {title} {{Growth of phase-space
+  density holes}},\ }\href {https://doi.org/10.1063/1.864430} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics of Fluids}\ }\textbf {\bibinfo
+  {volume} {26}},\ \bibinfo {pages} {2460} (\bibinfo {year}
+  {1983})}\BibitemShut {NoStop}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
+  \bibinfo {note} {Strictly, eq.\ (\ref {hfunc}) applies when ion charge
+  response is neglected. That neglect is not immediately obvious for slow
+  holes. However, at the threshold of instability the ion charge response
+  actually \protect \emph {is} negligible, so it is appropriate to invoke the
+  equation for thresholds, as well as for order of magnitude $\gamma
+  $-estimates for small amplitude holes.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Bernstein}\ \emph {et~al.}(1957)\citenamefont
+  {Bernstein}, \citenamefont {Greene},\ and\ \citenamefont
+  {Kruskal}}]{Bernstein1957}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~B.}\ \bibnamefont
+  {Bernstein}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Greene}},\ and\ \bibinfo {author} {\bibfnamefont {M.~D.}\ \bibnamefont
+  {Kruskal}},\ }\bibfield  {title} {\bibinfo {title} {{Exact nonlinear plasma
+  oscillations}},\ }\href
+  {http://journals.aps.org/pr/abstract/10.1103/PhysRev.108.546} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume}
+  {108}},\ \bibinfo {pages} {546} (\bibinfo {year} {1957})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Raadu}(1989)}]{Raadu1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Raadu}},\ }\bibfield  {title} {\bibinfo {title} {{The physics of double
+  layers and their role in astrophysics}},\ }\href
+  {http://www.sciencedirect.com/science/article/pii/0370157389901099}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physics reports}\ }\textbf
+  {\bibinfo {volume} {178}},\ \bibinfo {pages} {25} (\bibinfo {year}
+  {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stringer}(1964)}]{Stringer1964}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont
+  {Stringer}},\ }\bibfield  {title} {\bibinfo {title} {{Electrostatic
+  instabilities in current-carrying and counterstreaming plasmas}},\ }\href
+  {http://iopscience.iop.org/0368-3281/6/3/305} {\bibfield  {journal} {\bibinfo
+   {journal} {Journal of Nuclear Energy. Part C, Plasma Physics}\ }\textbf
+  {\bibinfo {volume} {6}},\ \bibinfo {pages} {267} (\bibinfo {year}
+  {1964})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fried}\ and\ \citenamefont {Wong}(1966)}]{Fried1966}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~D.}\ \bibnamefont
+  {Fried}}\ and\ \bibinfo {author} {\bibfnamefont {A.~Y.}\ \bibnamefont
+  {Wong}},\ }\bibfield  {title} {\bibinfo {title} {{Stability Limits for
+  Longitudinal Waves In Ion Beam‐Plasma Interaction}},\ }\href
+  {http://scitation.aip.org/content/aip/journal/pof1/9/6/10.1063/1.1761806}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physics of Fluids (1958-1988)}\
+  }\textbf {\bibinfo {volume} {9}},\ \bibinfo {pages} {1084} (\bibinfo {year}
+  {1966})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Penrose}(1960)}]{Penrose1960}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Penrose}},\ }\bibfield  {title} {\bibinfo {title} {{Electrostatic
+  Instabilities of a Uniform Non-Maxwellian Plasma}},\ }\href
+  {https://doi.org/10.1063/1.1706024} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Fluids}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo
+  {pages} {258} (\bibinfo {year} {1960})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mandal}\ \emph {et~al.}(2020)\citenamefont {Mandal},
+  \citenamefont {Sharma},\ and\ \citenamefont {Schamel}}]{Mandal2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Mandal}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sharma}},\
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Schamel}},\
+  }\bibfield  {title} {\bibinfo {title} {Ultra slow electron holes in
+  collisionless plasmas: Stability at high ion temperature},\ }\href
+  {https://doi.org/10.1063/1.5121530} {\bibfield  {journal} {\bibinfo
+  {journal} {Physics of Plasmas}\ }\textbf {\bibinfo {volume} {27}},\ \bibinfo
+  {pages} {022102} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/https://doi.org/10.1063/1.5121530}
+  {https://doi.org/10.1063/1.5121530} \BibitemShut {NoStop}%
+\end{thebibliography}%

@@ -1,20 +1,34 @@
-\documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{graphicx}
+\documentclass[pre]{revtex4-2}
+%\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{bm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifx\affiliation\undefined %Then we are not using a journal class
+\def\affiliation#1{\date{\normalsize #1}}
+\usepackage[margin=1in]{geometry}
 \usepackage[sort&compress,numbers]{natbib}
- \bibliographystyle{unsrtnatIH}
-\title{Can slow electron holes exist?}
-\author{I H Hutchinson}
+\bibliographystyle{unsrtnatIH}
+%\bibliographystyle{apsrev4-2}
+\else % We are using journal class.
+%\bibliographystyle{apsrev}  % Don't use this.
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\title{How can slow plasma electron holes exist?}
+\author{I H Hutchinson}
+\affiliation{Plasma Science and Fusion Center, Massachusetts
+  Institute of Technology, Cambridge, MA, USA} 
 
-\maketitle
+\ifx\altaffiliation\undefined\maketitle\fi % Latex documentclass.
 \begin{abstract}
-  One dimensional analysis is carried out of solitary positive
-  potential structures whose velocity lies within the range of ion
+  One dimensional analysis is presented of solitary positive
+  potential plasma structures whose velocity lies within the range of ion
   distribution velocities that are strongly populated: so called
   ``slow'' electron holes. It is shown that to avoid the
   self-acceleration of the hole velocity away from ion velocities it
@@ -27,6 +41,7 @@
   contribution from trapped electrons, it seems highly likely that
   such observed slow potential structures are indeed electron holes.
 \end{abstract}
+\ifx\altaffiliation\undefined\else\maketitle\fi  % Revtex
 
 \section{Introduction}
 
@@ -56,24 +71,20 @@ heavier) ions. Ion response can then often be completely ignored. For
 slower holes, though, ion interaction gradually becomes important.
 When hole speed is less than a few (up to about $(m_i/m_e)^{1/4}$)
 times the ion acoustic speed ($c_s=\sqrt{T_e/m_i}$), the ion
-interaction is significant, and the the electron hole speed is
-``repelled'' from the ion speed\cite{Hutchinson2016,Zhou2016},
-maintaining a velocity (difference) greater than a minimum that
-increases with hole potential. If the hole speed is less than that
-minimum, an oscillatory instability in the hole speed
-arises\cite{Zhou2017} and there is therefore a forbidden region of
-hole speed. This forbidden velocity region has a lower limit that is
-at approximately the ion-acoustic soliton speed, which is of order
-$c_s$ (depending on peak potential\footnote{Conventionally the cold
-  ion acoustic soliton maximum speed is taken as $1.59c_s$ at
-  potential $\phi=1.26T_e/e$, but that is for an isothermal
-  (Boltzmann) electron response, whose nonlinear application is
-  debatable.}). At that specific speed, an entity usually called a
-coupled hole-soliton (CHS) is known from
+interaction is significant, and the the electron hole speed resists
+approaching the ion speed\cite{Hutchinson2016,Zhou2016}, maintaining a
+velocity (difference) greater than a minimum that increases with hole
+potential. If the hole speed is less than that minimum, an oscillatory
+instability in the hole speed arises\cite{Zhou2017} and there is
+therefore a forbidden region of hole speed. This forbidden velocity
+region has a lower limit that is at approximately the ion-acoustic
+soliton speed, which is just above $c_s$ (depending on peak
+potential\cite{Davidson1972}). At that specific speed, an entity
+usually called a coupled hole-soliton (CHS) is known from
 simulations\cite{Saeki1991,Saeki1998,Zhou2018} to exist. In effect the
 electron hole is trapped in, and enhances, the positive potential
 produced at that speed by the positive ion density perturbation of the
-ion acoustic soliton. A CHS generally moves faster than the ion
+ion-acoustic soliton. A CHS generally moves faster than the ion
 thermal speed, provided the electron temperature is greater than ion
 temperature, so there are few ions in the distribution at the CHS
 speed, and Landau damping can be small.
@@ -111,14 +122,14 @@ $v_{ti}$. Thus, past simulation attempts have failed to produce steady
 slow electron holes.
 
 The novelty and complexity of the present analysis in comparison with
-the prior treatments of ion acoustic solitons and electron holes is
+the prior treatments of ion-acoustic solitons and electron holes is
 that it \emph{requires a kinetic} (rather than fluid, e.g.\cite{Kakad2016})
 treatment of the ions in equilibrium. Concerning past kinetic electron
 hole analysis (e.g.\cite{Dupree1982}) and simulations
 (e.g.\cite{Eliasson2004}), the key difference is that the present
 analysis shows that for \emph{slow} positive structures to exist
 stably the background ion velocity distribution generally cannot be
-``single-humped''. It must instead possesses at least two maxima.
+``single-humped''. It must instead possess at least two maxima.
 Indeed, it is shown that slow positive solitary potentials sustained
 by trapped electron deficit (1) cannot persist in single-humped ion
 distributions; (2) can persist only when the velocity of the electron
@@ -198,7 +209,7 @@ as
   dv_\infty,
 \end{equation}
 where $|v_\phi|=\sqrt{2(\phi-\phi_\infty)}$ is the speed at infinity
-of ions that are reflected at the position $x$, potential $\phi$, and
+of ions that are reflected at the position $x$, potential $\phi$; and
 prime denotes differentiation with respect to argument
 ($v_\infty$). This density is then simply a function of $\phi$.
 Express the density far from the potential structure as
@@ -233,7 +244,7 @@ speeds. Such unstable acceleration has been well documented in
 simulations\cite{Eliasson2004,Zhou2016}\footnote{A recent
   paper\protect{\cite{Mandal2020}} reports Vlasov simulations
   appearing to show for Maxwellian distributions at $T_i/T_e=10$ that
-  self-acceleration is suppressed, and claims that high enough ion
+  self-acceleration is suppressed; and claims that high enough ion
   temperature $T_i/T_e>3.5$ can reverse the ion density
   response. These claims are proven by the present simple derivation
   to be incorrect.  The simulation code used is not self consistent
@@ -331,7 +342,7 @@ electrons $h$ can be written in closed form as
 The effective electron hole mass (per unit transverse area)
 $M=- n_em_e \int h(\chi) dx$ is thus negative.
 
-Within the present lumped approximation the equation of motion of the
+Within the present lumped approximation, the equation of motion of the
 potential structure is $\ddot{\delta x}=-(C/M)\delta x$, giving
 eigenfrequency $\omega =\pm\sqrt{C/M}$. The \emph{stability} of the
 initial symmetric equilibrium depends on the sign of $C/M$.  Stable
@@ -364,11 +375,11 @@ $L\equiv\int\phi dx/\psi$. This yields the dimensionless form
      \lambda_D^2 \omega_{pi}^2}
    \simeq -2 {T_e\over T_0} {m_i\over m_e} {\psi \over L^2},
  \end{equation}
- where, anticipating a result to be shown in the next section, the
- dimensionless magnitude of the numerator for hole form
- $\psi\, {\rm sech}^4(x/\ell)$ and unit density Maxwellian ions
- is found to be approximately $C=2\psi^2/L$.  A self-consistent electron
- hole of the sech$^4$ form has length
+ where, anticipating a result to be shown in section \ref{section2.3},
+ the dimensionless magnitude of the numerator for hole form
+ $\psi\, {\rm sech}^4(x/\ell)$ and unit density Maxwellian ions is
+ found to be approximately $C=2\psi^2/L$.  A self-consistent
+ small-amplitude electron hole of the sech$^4$ form has length
  $L=(16/3)\lambda_{De}= (16/3)\sqrt{T_e/T_0}$ (dimensionless).
  Therefore $C/M=-(3/16)^22\psi (m_i/m_e)$ and the growth rate is
  $\gamma=\sqrt{2\psi m_i/m_e}(3/16)$ in $\omega_{pi}$ units. It is
@@ -387,13 +398,13 @@ $L\equiv\int\phi dx/\psi$. This yields the dimensionless form
 
 
 
-\subsection{Non-single-humped Distribution Function Hole Stability}
+\subsection{Non-single-humped distribution function hole stability}
 \label{section2.3}
 
 For a stable electron hole or other positive potential
 structure attributable to the plasma itself to exist, we require the
 ion density perturbation that it produces to be non-negative. This is
-achieved in classic ion acoustic solitons by the relative speed of the
+achieved in classic ion-acoustic solitons by the relative speed of the
 soliton and the ions being substantially larger than the ion thermal
 speed. A classic soliton is not slow in the current
 sense\iffalse\footnote{It has been shown elsewhere that ion response to an
@@ -442,8 +453,8 @@ of the force coefficient,
 $C=\delta F/\delta x=-\int{dn\over dx}{d\phi_0\over dx} dx = -\int
 {dn\over d\phi_0}\left(d\phi_0\over dx\right)^2 dx$. Instability
 arises if $\delta F/\delta x$ is positive. Its value is determined by
-both the distribution function, giving $n(\phi_0)$, and potential
-profile $\phi_0(x)$, giving ${d\phi_0\over dx}$. However its sign
+both the distribution function (giving $n(\phi_0)$) and potential
+profile $\phi_0(x)$ (giving ${d\phi_0\over dx}$). However its sign
 depends only on the relative shape of $\phi_0(x)$, not on its extent,
 because expanding or contracting the profile in $x$ by a uniform
 (positive) scale factor $\ell$ simply divides $\delta F/\delta x$ by
@@ -477,22 +488,22 @@ their separation (and hence the depth of the local minimum) is scanned.
     velocity for an equally spaced range of (Gaussian) electron hole
     potential heights $\psi$.}\label{twobeamf}
 \end{figure}
-For distributions consisting of two symmetric Maxwellian components,
-shifted from $v=0$ by $\pm v_b$, Fig.\ \ref{twobeamf}(a) shows ion
-distribution shapes as $v_b$ is varied, with the marginally stable
-cases for $\psi=0.02$ and $\psi=0.5$ emphasized in bold black and
-red. Fig.\ \ref{twobeamf}(b) shows the force coefficients
-$\delta F/\delta x/\psi^2$ (using $L=1$) as a function of beam shift
-$v_b$ for a range of potential heights $\psi$. The magnitude of
-$\delta F/\delta x$ scales approximately like $\psi^2$ but because of
-nonlinearities in $n(\phi)$ there is a small variation in the force
-and threshold with potential peak height.
+For distributions consisting of two symmetric Maxwellian components of
+temperature $T=T_0=1$, shifted from $v=0$ by $\pm v_b$, Fig.\
+\ref{twobeamf}(a) shows ion distribution shapes as $v_b$ is varied,
+with the marginally stable cases for $\psi=0.02$ and $\psi=0.5$
+emphasized in bold black and red. Fig.\ \ref{twobeamf}(b) shows the
+force coefficients $\delta F/\delta x/\psi^2$ (using $L=1$) as a
+function of beam shift $v_b$ for a range of potential heights
+$\psi$. The magnitude of $\delta F/\delta x$ scales approximately like
+$\psi^2$ but because of nonlinearities in $n(\phi)$ there is a small
+variation in the force and threshold with potential peak height.
 
 
 As shown in Fig.\ \ref{twobeamf}(b), over a
 wide range of potential heights $\psi$ the threshold $v_b$, where
 $\delta F/\delta x$ crosses zero, varies a modest amount: between
-$1.33$ and $1.5$, and the corresponding depth of the minimum
+$1.3$ and $1.5$, and the corresponding depth of the minimum
 $(f_{max}-f_{min})/f_{max}$ is a fraction of the $f$-maximum that lies
 between $0.20$ and $0.36$. Greater $\psi$ requires deeper minimum.
 
@@ -517,7 +528,7 @@ profile (green) in which the $v_b$ is smaller by $0.02$. The precise
 threshold lies between these two $n(x)$ profiles, corresponding to a
 density that is nearly flat (but not exactly because of profile and
 nonlinear effects).  Fig.\ \ref{phinofx}(c) shows the same thing for a
-much larger potential peak $\psi$. One can see that near threshold
+much larger potential peak $\psi=0.5$. One can see that near threshold
 $dn(\phi)/d\phi$ actually reverses its sign at large $\phi$.
 
 
@@ -672,7 +683,7 @@ two similar but shifted Maxwellians, that has velocity symmetry in
 adopted that particular frame of reference as our equilibrium
 structure frame.)
 
-\subsection{Hole positional stability}
+\subsection{Velocity equilibrium and stability}
 \label{3.2}
 
 For $f_\infty$ intrinsically asymmetric we need to find both the
@@ -862,11 +873,11 @@ the non-single-humped background plasma ion distribution
 ion-ion modes. If not, perhaps electron hole existence would be
 prevented because the required background distribution minimum is
 unstable. The ion-ion instability can be explained in outline, with reference
-to Fig \ref{fig:ionstability} (obtained by a numerical method of
+to Fig \ref{fig:ionstability}, obtained by a numerical method of
 analyzing and visualizing these and other kinetic ion instabilities
 for arbitrary ion distributions developed by the present author,
 mostly for pedagogic purposes [see
-\url{https://github.com/ihutch/chiofv}]).
+\url{https://github.com/ihutch/chiofv}].
 \begin{figure}[htp]
   \centering
   \includegraphics[width=.7\hsize]{ionstabplot}
@@ -904,7 +915,7 @@ respectively. The electron susceptibility (for Maxwellian electron
 temperature $T_e$) gives to an excellent approximation
 $(k\lambda_D)^2\chi_e =(T_0/T_e)(1+iv_{p}\sqrt{\pi m_e/2T_e})$, and
 contributes an adjustment to the imaginary part of $\chi$ at large
-$|\Re(v_{p})|$, which is electron Landau damping of ion acoustic
+$|\Re(v_{p})|$, which is electron Landau damping of ion-acoustic
 waves. But for the low velocity instability this contribution is
 negligible and the black and blue contours coincide.
 
@@ -934,7 +945,7 @@ solution regions for $T_e=-T_0/\Re(k^2\lambda_D^2\chi_i)$.
 
 Two-beam distributions like Fig.\ \ref{fig:ionstability} have three
 unshaded regions where solutions exist. Those on the right and left
-are the positively and negatively propagating ion acoustic waves,
+are the positively and negatively propagating ion-acoustic waves,
 lying below the real axis when electron Landau damping is
 included. The central region coinciding with the distribution local
 minimum is where ion-ion instability solutions lie.
@@ -984,11 +995,13 @@ $|v_b|$ and hence less stable) than Fig.\ \ref{fig:thresh}(b). The
 value $\psi=0.1$ (b) is representative of small $\psi$. The
 uncertainty level of perhaps a few percent in the threshold away from
 the sharp cliff probably arises from the discrete velocity meshes and
-from the relatively coarse parameter mesh $20\times 20$.
-Since large $T_{threshold}$ occurs for some regions, contours are not
-shown above $T_{threshold}=10$ (a) or 20 (b). Overall at the rather
-extreme large amplitude $\psi=0.5$ (a), even for unusually small $T_2$
-no instability occurs for $T_e\gtrsim T_0$ or in fact for
+from the relatively coarse parameter mesh $20\times 20$.  Since large
+$T_{threshold}$ occurs for some regions, contours are not shown above
+$T_{threshold}=10$ (a) or 20 (b).
+
+At the rather large (and hence more
+unstable) amplitude $\psi=0.5$ (a), even for unusually small $T_2$ no
+ion-ion instability occurs until $T_e\gtrsim T_0$ or in fact
 $T_e\gtrsim 6 T_{min}$, where $T_{min}$ is the smaller of the two
 components' ion temperatures, no matter what $n_2$ is. For small
 amplitude holes ($\psi=0.1$) (b), $T_{threshold}\gtrsim 20 T_{min}$
