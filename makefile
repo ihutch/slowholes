@@ -54,7 +54,10 @@ OBJECTS=
 
 iondenofphi :
 
+tar :
+	tar czf slowholes.tar.gz slowholes.tex slowholes.bbl twobeamf.pdf dFdxvb.pdf phinofx.pdf phinofx3.pdf contribs.pdf vsthreshplot.pdf vsthreshplot2.pdf shapes.pdf ionstabplot.pdf contpsi5.pdf contpsi1.pdf
+
 clean :
 	rm -f *.o *.mod plot*.ps iondenofphi contribs *.aux *synctex*
-	rm -fr accis auto
+	rm -fr accis auto slowholes.tar.gz
 
