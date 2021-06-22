@@ -23,9 +23,10 @@ real, dimension(nvsmax) :: vsa
 real, dimension(npsimax) :: psia
 integer, dimension(npsimax) :: icrsa,jtha
 integer :: nvs=nvsmax,npsi=npsimax,imultiscan=0,nframes=2
-real :: vt2set2=1.,denset2=.5,vt2set=1.,Tthresh=0.
+real :: vt2set2=1.,denset2=.5,vt2set=1.,Tthresh=0.,vsmax=2.5
 logical :: lplotfv=.false.,lstab=.false.,lscanplot=.true.
 logical :: lmain=.true.,lequil=.false.,ldebug=.false.,lsech4=.true.
+character*30 :: label=''
 contains
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -348,6 +349,8 @@ end subroutine ForceOfX
        if(argument(1:2).eq.'-v')read(argument(3:),*)vh
        if(argument(1:2).eq.'-i')read(argument(3:),*)imultiscan
        if(argument(1:2).eq.'-m')read(argument(3:),*)nframes
+       if(argument(1:2).eq.'-w')read(argument(3:),*)vsmax
+       if(argument(1:2).eq.'-l')read(argument(3:),'(a)')label
        if(argument(1:2).eq.'-c')call pfset(-3)
        if(argument(1:2).eq.'-E')lplotfv=.not.lplotfv
        if(argument(1:2).eq.'-M')lmain=.not.lmain
@@ -389,6 +392,8 @@ end subroutine ForceOfX
     write(*,'(a,f6.2,a)')' -T<T1>   read T1   [',vt2set,' +v beam width'
     write(*,'(a,f6.2,a)')' -t<T2>   read T2   [',vt2set2,' -v beam width'
     write(*,'(a,f6.2)')' -d<n2>   read n2   [',denset2
+    write(*,'(a,f6.2)')' -w<vsm>  read vsmax[',vsmax
+    write(*,'(a,a)')' -l<char> read label[',label
     call exit
   end subroutine parseargs
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
@@ -797,8 +802,8 @@ integer STDERR
 STDERR=0
 if(psi.eq.0)psi=.1
 nvs=min(10,int(npsimax/2.))
-vsmax=2.5
 vsmin=0.
+vsmaxin=vsmax
 denset1=1.-denset2
 jthresh=0
 vhcross=0.
@@ -856,6 +861,7 @@ do k=1,niterk
 enddo
 vs=vsmin+(vsmax-vsmin)*(jthresh)/float(nvs)
 jthresh=jthresh+joff
+vsmax=vsmaxin
 
 if(lplotfv)then
    call ForceOfX(psi,(v(icross)+v(icross-1))/2.,1)
@@ -883,9 +889,9 @@ write(*,'(a,f6.3,a,f6.3,a,f7.3,a,f7.3)')'Threshold for psi=',psi,'&
      & stable vh=',vhcross,' vb/sqrt(T1)=',gpar(2,1)/sqrt(gpar(4,1))
 write(STDERR,'(a,8f8.4)')'gpars:',gpar(:,1),gpar(:,2)
 
-call ionionstab
 ! Do plot:
 if(lscanplot)then
+call ionionstab
 
 call dcharsize(.022)
 call multiframe(3,1,1)
@@ -894,14 +900,14 @@ call minmax(fva(1,1),nv,fmin,fmax)
 call pltinit(v(1),v(nv+1),fmin,1.05*fmax)
 call axis; call axis2
 call axlabels('','!Bf!@(!Bv!@)')
-call legendline(.48,1.07,258,'!Bv!@')
+call legendline(.48,1.07,258,'!Bv!@')   ! Removed for PRL
 do j=1,nvs
    call color(mod(j,14)+1)
    call polyline(v(1),fva(1,j),nv+1)
 enddo
 call color(15)
 call winset(.true.)
-call polyline([vhcross,vhcross],[0.,1.],2)
+call polyline([vhcross,vhcross],[0.,20.],2)
 if(jthresh.gt.0)call polymark(v(1),fva(1,nvs+1),nv+1,3)
 call legendline(.94,.9,258,'(i)')
 
@@ -909,13 +915,14 @@ call minmax(forcea(1,1),nv,fmin,fmax)
 call pltinit(v(1),v(nv+1),1.1*fmin,1.1*fmax)
 call axis; call axis2
 call axlabels('','F/!Ay!@!u2!u')
+!call axlabels('','F/!AM!@!d0!d!u2!u')         !PRL
 do j=1,nvs
    call color(mod(j,14)+1)
    call polyline(v(1),forcea(1,j),nv+1)
 enddo
 call color(15)
 call winset(.true.)
-call polyline([vhcross,vhcross],[-5.,5.],2)
+call polyline([vhcross,vhcross],[-30.,30.],2)
 if(jthresh.gt.0)call polymark(v(1),forcea(1,nvs+1),nv+1,3)
 call polyline([v(1),v(nv+1)],[0.,0.],2)
 call legendline(.93,.9,258,'(ii)')
@@ -923,14 +930,15 @@ call legendline(.93,.9,258,'(ii)')
 call minmax(delfrcdelx(1,1),nv,fmin,fmax)
 call pltinit(v(1),v(nv+1),1.3*fmin,1.05*fmax)
 call axis; call axis2
-call axlabels('!Bv!@!dh!d','!Ad!@F/!Ad!@x/!Ay!@!u2!u')
+call axlabels('!Bv!@!dh!d'//label(1:lentrim(label)),'!Ad!@F/!Ad!@x/!Ay!@!u2!u')
+!call axlabels('!Bv!@!dh!d'//label(1:lentrim(label)),'!Ad!@F/!Ad!@x/!AM!@!d0!d!u2!u')!PRL
 do j=1,nvs
    call color(mod(j,14)+1)
    call polyline(v(1),delfrcdelx(1,j),nv+1)
 enddo
 call color(15)
 call winset(.true.)
-call polyline([vhcross,vhcross],[-5.,5.],2)
+call polyline([vhcross,vhcross],[-30.,30.],2)
 if(jthresh.gt.0)call polymark(v(1),delfrcdelx(1,nvs+1),nv+1,3)
 call polyline([v(1),v(nv+1)],[0.,0.],2)
 call legendline(.92,.9,258,'(iii)')

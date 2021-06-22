@@ -59,6 +59,32 @@ conditions for the existence of plasma-sustained steady slow solitary
 positive potential structures, including electron holes, and identify
 the mechanisms that control them.
 
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=0.5\hsize]{electronholeorbits}
+  \caption{Schematic of a slow electron hole and the corresponding
+    electron and ion phase-space density contours.}
+  \label{fig:electronholeorbits}
+\end{figure}
+Figure \ref{fig:electronholeorbits} shows contours of electron and
+velocity distribution functions $f(v)$, for a presumed steady slow
+potential peak, in their respective $x,v$ phase-spaces (using
+conveniently normalized units). For \emph{trapped} electron orbits,
+$f_e(v)$ is determined by conditions during the structure's formation
+and has lower value than the nearby passing orbits which are
+determined by the boundary conditions. This results in a more negative
+central electron density than ion density and causes the potential
+peak. (Electron contour values are not important to this illustrative
+discussion and not shown.) The ion distribution is everywhere
+determined by the distant distribution function and the fact (arising
+from Vlasov's equation) that $f$ is constant along orbits. Orbits have
+constant energy for a steady potential. Ions are reflected by
+the hole if their speed in the hole frame is small enough. The
+illustrative case shown corresponds to Maxwellian ion distribution at
+large $|x|$, with zero average velocity in the hole frame. That is,
+this hole has zero velocity in the ion frame.
+
 The reasons to question whether slow electron holes can exist are to
 do with the interaction of their positive potential peak with the
 ions. Classic electron holes move at speeds, relative to ions, up to
@@ -67,13 +93,20 @@ $v_{te}$\cite{Schamel1986a,Hutchinson2017}. And when they are at more
 than a very small fraction of $v_{te}$, the ion perturbation is small
 because the duration of any moving electron hole's interaction with an
 ion is much smaller than the typical response time of the (far
-heavier) ions. Ion response can then often be completely ignored. For
-slower holes, though, ion interaction gradually becomes important.
-When hole speed is less than a few (up to about $(m_i/m_e)^{1/4}$)
-times the ion acoustic speed ($c_s=\sqrt{T_e/m_i}$), the ion
-interaction is significant, and the the electron hole speed resists
-approaching the ion speed\cite{Hutchinson2016,Zhou2016}, maintaining a
-velocity (difference) greater than a minimum that increases with hole
+heavier) ions. Ion response can then often be completely ignored. As
+has been extensively discussed, for example in the original paper on
+BGK-modes\cite{Bernstein1957} and the electron hole review
+literature\cite{Hutchinson2017} the detailed shape of the hole has
+considerable latitude to adjust itself to the details of the trapped
+electron velocity distribution, and is only a minor consideration here,
+limiting the discussion to potentials with a single maximum.
+
+For slower holes ion interaction gradually becomes important.  When
+hole speed is less than a few (up to about $(m_i/m_e)^{1/4}$) times
+the ion acoustic speed ($c_s=\sqrt{T_e/m_i}$), the ion interaction is
+significant, and the electron hole speed resists approaching the ion
+speed\cite{Hutchinson2016,Zhou2016}, maintaining a velocity
+(difference) greater than a minimum that increases with hole
 potential. If the hole speed is less than that minimum, an oscillatory
 instability in the hole speed arises\cite{Zhou2017} and there is
 therefore a forbidden region of hole speed. This forbidden velocity
@@ -109,12 +142,13 @@ present sense.
 
 
 Simulations that initialize an electron hole at speeds of order the
-ion thermal speed $v_{ti}$ or less, observe a remarkable and rapid
-``self-acceleration'' of the
-hole\cite{Saeki1991,Muschietti1999,Eliasson2004,Eliasson2006,Zhou2016}. The growing
-negative ion density (and hence charge) perturbation caused by the
-repulsion of ions from the positive potential of the hole repells the
-electron hole, because an electron hole's dynamics as a composite
+ion thermal speed $v_{ti}$ or less in an initially uniform ion
+background, observe a remarkable and rapid ``self-acceleration'' of
+the
+hole\cite{Saeki1991,Muschietti1999,Eliasson2004,Eliasson2006,Zhou2016}. The
+growing negative ion density (and hence charge) perturbation caused by
+the repulsion of ions from the positive potential of the hole repells
+the electron hole, because an electron hole's dynamics as a composite
 entity are such that it has an effective charge to mass ratio equal to
 that of the electron\cite{Haakonsen2015,Hutchinson2016}. A short time
 after initialization, it moves away at speeds much larger than
@@ -128,12 +162,12 @@ treatment of the ions in equilibrium. Concerning past kinetic electron
 hole analysis (e.g.\cite{Dupree1982}) and simulations
 (e.g.\cite{Eliasson2004}), the key difference is that the present
 analysis shows that for \emph{slow} positive structures to exist
-stably the background ion velocity distribution generally cannot be
+stably, the background ion velocity distribution generally cannot be
 ``single-humped''. It must instead possess at least two maxima.
 Indeed, it is shown that slow positive solitary potentials sustained
 by trapped electron deficit (1) cannot persist in single-humped ion
 distributions; (2) can persist only when the velocity of the electron
-hole lies in a local minimum of the ion distribution function; but (3)
+hole lies within a local minimum of the ion distribution function; but (3)
 do not require background distributions that are ion-ion unstable,
 provided the electron temperature is not very high. All the discussion
 here is one-dimensional, and multidimensional stability is beyond the
@@ -146,9 +180,10 @@ for substantial time durations.
 These theoretical characteristics are valuable for identifying the
 nature of slow solitary potential peaks observed in plasmas, and for
 indicating the presence of double-humped ion distributions. Recent
-analysis of observations reported elsewhere [Kamaletdinov et al 2021,
-in preparation] confirm the characteristics for slow electron holes
-observed in the plasma sheet boundary layer.
+analysis reported elsewhere [Kamaletdinov et al 2021, submitted to
+Physical Review Letters] of satelite measurements confirm the
+characteristics for slow electron holes observed in the plasma sheet
+boundary layer.
 
 Section \ref{sec1} addresses ion distribution functions that have
 reflectional symmetry in some reference frame. The simplifications of
@@ -231,27 +266,29 @@ density change arising from a positive potential is always
 negative. This is one indication that a positive potential soliton
 sustained by ions cannot exist at low speed relative to the ion
 thermal (or acoustic) speed. The density perturbation has the wrong
-polarity for self sustainment. What is more, this observation has
-important consequences for the possibility of slow electron holes.
-For single-humped $f_\infty$ they will have negative ion charge
-relative to the external plasma. This negative ion charge repells
-\iffalse electrons, and because electron holes are accelerated by
-applied electric fields as if their charge to mass ratio were equal to
-that of the electron, the negative ion charge repells \fi the electron
-hole that causes them. The result is rapid acceleration of the
-electron hole until it has speed higher than typical ion thermal
-speeds. Such unstable acceleration has been well documented in
-simulations\cite{Eliasson2004,Zhou2016}\footnote{A recent
-  paper\protect{\cite{Mandal2020}} reports Vlasov simulations
+polarity for self sustainment. What is more, as we shall see in the
+next section, this observation has important consequences for the
+possibility of slow electron holes.  For single-humped $f_\infty$ they
+will have negative ion charge relative to the external plasma. This
+negative ion charge repells \iffalse electrons, and because electron
+holes are accelerated by applied electric fields as if their charge to
+mass ratio were equal to that of the electron, the negative ion charge
+repells \fi the electron hole that causes them. The result is rapid
+acceleration of the electron hole until it has speed higher than
+typical ion thermal speeds. Such unstable acceleration has been well
+documented in simulations\cite{Eliasson2004,Zhou2016}\footnote{A
+  recent paper\protect{\cite{Mandal2020}} reports Vlasov simulations
   appearing to show for Maxwellian distributions at $T_i/T_e=10$ that
-  self-acceleration is suppressed; and claims that high enough ion
-  temperature $T_i/T_e>3.5$ can reverse the ion density
-  response. These claims are proven by the present simple derivation
-  to be incorrect.  The simulation code used is not self consistent
-  and its results are contradicted by simulations using a well
-  established code. The analysis included to explain its results is
-  faulty.}.  Thus the slow electron hole equilibrium in a
-single-humped ion distribution is unstable to hole acceleration.
+  self-acceleration is suppressed. It claims that high enough ion
+  temperature $T_i/T_e>3.5$ can reverse the ion density response. That
+  claim is proven by the present simple derivation to be incorrect.
+  The simulation code is not initialized self consistently, resulting
+  in potential oscillations much larger than the extremely small hole
+  potential; these factors cast doubt on its results, which contradict
+  several other code simulations at larger amplitude. The analysis
+  included to explain its results is faulty.}.  Thus the slow electron
+hole equilibrium in a single-humped ion distribution is unstable to
+hole acceleration.
 
 \subsection{Force and acceleration of the potential structure}
 
@@ -276,15 +313,21 @@ displacement $\delta x$ of the potential structure (in the equilibrium
 frame) begins, which is rapid relative to the timescale of adjustment
 of the ion density to the movement. This presumption is a good
 approximation for an electron hole experiencing unstable acceleration
-because the timescale for electron motion and hence structure motion
-is so much shorter (by $\sim \sqrt{m_e/m_i}$) than for ion
-motion. After a short time, the density of the slowly responding ions,
-$n(x)$, will to lowest order be unchanged, it remains a function of
-the steady potential $\phi_0$, but will no longer be a function of the
-instantaneous potential $\phi=\phi_0+\delta\phi$. Consequently the
-symmetry is broken, and total force on the ions will be non-zero.
-The linearized perturbation for a small rigid shift $\delta x$ of the potential
-structure is
+as has been shown analytically\cite{Hutchinson2016}, and by
+simulation\cite{Zhou2016} elsewhere.  Also, the timescale for electron
+motion and hence structure motion is much shorter (by
+$\sim \sqrt{m_e/m_i}$) than for ion motion. After a short time, the
+density of the slowly responding ions, $n(x)$, will to lowest order be
+unchanged, it remains a function of the steady potential $\phi_0$, but
+will no longer be a function of the instantaneous potential
+$\phi=\phi_0+\delta\phi$. Consequently the symmetry is broken, and
+total force on the ions will be non-zero.  The linearized perturbation
+for a small rigid shift $\delta x$ of the potential
+structure\footnote{A pure shift of the potential structure is
+  justified if the ion charge contribution to the equilibrium hole is
+  small compared with the electron. If not, then the magnitude of the
+  force increment will be only approximate; nevertheless, its sign,
+  which determines stability, will not be changed.} is
 $\delta\phi\simeq-{d\phi_0\over dx}\delta x$ which is
 anti-symmetric. The ion force increment is
 \begin{equation}
@@ -320,7 +363,7 @@ $0=\dot P_i+\dot P_e=\delta F +\dot P_e$. Thus the effective mass of
 the hole, its force divided by acceleration, is
 $M=-\delta F/\ddot{\delta x}=\dot P_e/\ddot{\delta x}$. The electron
 momentum change arises from jetting by the accelerating potential
-structure, and is given by equation (34) of reference \cite{Hutchinson2016}
+structure, and is given by equation (34) of reference\cite{Hutchinson2016}
 in dimensional units
 
 \begin{equation}
@@ -331,8 +374,9 @@ where $h(\chi)$ is a non-negative function\footnote{Strictly, eq.\
   neglect is not immediately obvious for slow holes. However, at the
   threshold of instability the ion charge response actually \emph{is}
   negligible, so it is appropriate to invoke the equation for
-  thresholds, as well as for order of magnitude $\gamma$-estimates for
-  small amplitude holes.} of argument
+  thresholds. When estimates of unstable positive growth rate
+  $\gamma\not=0$ are later obtained from it, one should beware of the
+  approximation and take these as approximate only.} of argument
 $\chi\equiv\sqrt{|e\phi|/T_e}$. For negligibly shifted Maxwellian
 electrons $h$ can be written in closed form as
 \begin{equation}\label{hfunc}
@@ -341,6 +385,7 @@ electrons $h$ can be written in closed form as
 \end{equation}
 The effective electron hole mass (per unit transverse area)
 $M=- n_em_e \int h(\chi) dx$ is thus negative.
+
 
 Within the present lumped approximation, the equation of motion of the
 potential structure is $\ddot{\delta x}=-(C/M)\delta x$, giving
@@ -360,8 +405,6 @@ $M=-(n_em_e/T_e)\int e\phi dx$, and
 \begin{equation}
   \label{eq:CbyM}
   {C\over M}= {-e\int {dn\over d\phi_0}\left(d\phi_0\over dx\right)^2 dx
-    \over -(n_em_ee/T_e)\int \phi dx }.
-  ={-e\int {dn\over d\phi_0}\left(d\phi_0\over dx\right)^2 dx
     \over -(n_em_ee/T_e)\int \phi dx }.
 \end{equation}
 Now we convert $\phi,\ \psi$, $x$, and $C/M$ into dimensionless units
@@ -482,10 +525,10 @@ their separation (and hence the depth of the local minimum) is scanned.
   \includegraphics[width=0.48\hsize]{dFdxvb}\hskip-1.5em (b)
   \caption{(a) The ion distribution functions arising for the sum of
     two symmetric Maxwellians displaced by $\pm v_b$ for
-    $0<v_b<2$. The threshold case is marked in black for $\psi=0.5$
-    and red for $\psi=0.02$ . (b) The force coefficient
+    $0<v_b<2$. The threshold case is marked in thick black for $\psi=0.5$
+    and thick red for $\psi=0.02$ . (b) The force coefficient
     $\delta F/\delta x/\psi^2$ as a function of the beam
-    velocity for an equally spaced range of (Gaussian) electron hole
+    velocity for an equally spaced range of (${\rm sech}^4$ shape) electron hole
     potential heights $\psi$.}\label{twobeamf}
 \end{figure}
 For distributions consisting of two symmetric Maxwellian components of
@@ -540,28 +583,35 @@ itself be responsible for sustaining the structure. In multiple-humped
 ion distributions is there such a thing as a slow positive ion
 soliton?  The answer appears to be no. The reason is not stability,
 but equilibrium. To generate a solitary positive potential peak
-requires the electric charge to be positive near the peak but
-negative in the wings. Yes, ion charge perturbation can be positive for
-positive potential in a local minimum of the distribution function,
-but it is never negative, and actually $dn/d\phi$ decreases with
-increasing $\phi$. Therefore certainly ions alone cannot sustain a
-slow positive soliton. This contrasts with negative potential
-\emph{ion holes}, which can be sustained by a deficit of trapped ions.
+requires the electric charge to be positive near the peak but negative
+in the wings. Yes, ion charge perturbation can be positive for
+positive potential whose velocity lies within a local minimum of the
+distribution function; but if so it is never negative, because
+actually $dn/d\phi$ decreases with increasing $\phi$. That rules out
+the required transition from negative to positive ion charge
+perturbation as $\phi$ rises moving from the hole wing to the
+potential peak. Therefore certainly ions alone cannot sustain a slow
+positive soliton. This contrasts with negative potential \emph{ion
+  holes}, which can be sustained by a deficit of trapped ions.
 
 A Maxwellian electron distribution with no trapped deficit gives a
 negative charge density perturbation approximately linear with
-potential ($\sim -\phi$).  Electrons can therefore give the required
-negative charge density in the wings of the hypothesized solitary
-structure, and do so for a classic ion-acoustic soliton. But to obtain
-positive charge density near the potential peak, the rise in ion
-density has to overwhelm the rise in electron density in the center
-but not in the wings. That requires the ion density to have
-substantial positive curvature $d^2n/d\phi^2$. It has for a passing
-ion beam, but it generally does not for a slow structure, because of
-ion reflection. In fact (compare Fig.\ \ref{phinofx}(c)) at potentials
-comparable to the width of the $f(v)$ minimum, $n(\phi)$ has
-substantial \emph{negative} curvature, with $dn/d\phi$ eventually
-becoming negative.
+potential ($\sim -\phi$) (see e.g.\ \cite{Hutchinson2017}).  Electrons
+therefore \emph{can} give the required negative charge density in the
+wings of the hypothesized solitary structure, and do so for a classic
+ion-acoustic soliton. But to obtain positive charge density near the
+potential peak, the rise in ion density (in a soliton) has to
+overwhelm the rise in electron density in the center but not in the
+wings. That requires the ion density to have substantial positive
+curvature $d^2n/d\phi^2$. It has for a passing ion beam, but it
+generally does not for a slow structure, because of ion reflection. In
+fact (compare Fig.\ \ref{phinofx}(c)) at potentials comparable to the
+width of the $f(v)$ minimum, $n(\phi)$ has substantial \emph{negative}
+curvature (with $dn/d\phi$ eventually becoming negative). This
+appears to be a general rule arising from the reflection of
+progressively higher $f_\infty(v)$ values as the reflection velocity range
+expands from a zero lying in a distribution minimum, as required for
+velocity stability.
 
 Therefore essentially any positive solitary structure that is slow in
 the sense of having velocity coinciding with the dominant parts of the
@@ -579,20 +629,20 @@ complications.
 
 \subsection{Calculation of density}
 
-First, if $f_\infty$ is asymmetric in the incoming sign ($\sigma_\infty$ say)
+First, if $f_\infty$ is asymmetric in the incoming sign ($\sigma_{v\infty}$ say)
 of $v_\infty$, the ion density will be a function of \emph{both} the
 magnitude of the potential \emph{and} the side of potential peak at
 which the potential occurs. That is because slow ions will be
 reflected and hence contribute only on one side or the other of the
-peak (positions $x$ having sign $\sigma_x=-\sigma_\infty$). We should
+peak (positions $x$ having sign $\sigma_x=-\sigma_{v\infty}$). We should
 therefore refer to the potential in a way that indicates the sign; one
 convenient way to do so is to express it as the distant incoming
 velocity that reflects at $\phi$:
-$v_\phi\equiv-\sigma_x\sqrt{2(\phi-\phi_\infty)}=\sigma_\infty\sqrt{2(\phi-\phi_\infty)}$.
+$v_\phi\equiv-\sigma_x\sqrt{2(\phi-\phi_\infty)}=\sigma_{v\infty}\sqrt{2(\phi-\phi_\infty)}$.
 
 But second, even with this clarification, the density is actually a
 function of the local potential (and hence $v_\phi$) \emph{and also} the
-height of of the potential peak $\psi$; because although in a
+height of the potential peak $\psi$; because although in a
 collisionless situation $f$ and energy are constant, whether the
 distribution of particles $f(x,v)$ moving away from the peak is
 representative of $v_\infty$ positive or negative depends whether
@@ -617,14 +667,14 @@ $v_\psi=\sqrt{2(\psi-\phi_\infty)}$ (positive value).
 \includegraphics[width=.8\hsize]{contribs}  
 \caption{Distant velocity ranges ($v_\infty$, horizontal dash-dot
   lines) that contribute to the integrals of $f_\infty(v_\infty)$
-  giving density, at the two sides of a potential peak: $\sigma_\infty=+1$
-  ($x$ negative) blue, and $\sigma_\infty=-1$ ($x$ positive) red. Vertical
+  giving density, at the two sides of a potential peak: $\sigma_{v\infty}=+1$
+  ($x$ negative) blue, and $\sigma_{v\infty}=-1$ ($x$ positive) red. Vertical
   lines at $v_\phi$ indicate the $v_\infty$ that reflects at potential
   $\phi$ and $v_\psi$ that reflects at $\psi$ }\label{contribs}
 \end{figure}
 The $v_\infty$ ranges that contribute to the
-density locally at $\phi(x)=\phi$ for the two signs $\sigma_\infty=+1$
-($\sigma_x=-1$) blue, and $\sigma_\infty=-1$ ($\sigma_x=+1$) red are
+density locally at $\phi(x)=\phi$ for the two signs $\sigma_{v\infty}=+1$
+($\sigma_x=-1$) blue, and $\sigma_{v\infty}=-1$ ($\sigma_x=+1$) red are
 shown as horizontal dash-dot lines.
  A purely
 illustrative Maxwellian $f_\infty$ is shown emphasizing that even a
@@ -641,7 +691,7 @@ $v_\phi^2\equiv 2(\phi-\phi_\infty)$, but the tricky part is the three
 subranges of integration. They give density contributions we may
 denote $n_r$ from particles that will be or have been reflected giving two
 contributions from
-velocity in $[v_\phi,\sigma_\infty v_\psi]=[v_\phi,-\sigma_x v_\psi]$, $n_t$ from particles that have been
+velocity in $[v_\phi,\sigma_{v\infty} v_\psi]=[v_\phi,-\sigma_x v_\psi]$, $n_t$ from particles that have been
 transmitted $[\sigma_xv_\psi,\sigma_x\infty]$, and $n_u$ (unreflected)
 from particles that will not be reflected
 $[-\sigma_xv_\psi,-\sigma_x\infty]$:
@@ -669,7 +719,8 @@ in which the integrated parts no longer cancel.
 This expression allows us to calculate the density arising everywhere
 on a potential structure stationary in some inertial frame and the
 resulting force on the ions
-$F=-\int_{-\infty}^{\infty} n(x) {d\phi\over dx}dx$. However, unlike
+$F=-\int_{-\infty}^{\infty} n(x) {d\phi\over dx}dx= \sum_{\sigma_x=\pm1} 
+\int_{\phi_\infty}^\psi n(\phi,\sigma_x) \sigma_x d\phi$. However, unlike
 the symmetric case, no symmetry now tells us what the equilibrium
 velocity of that frame relative to the ion distribution should be. And
 for an arbitrary frame velocity $v_h$ relative to the ion
@@ -713,12 +764,13 @@ approximations: the extreme limits of fast and slow. This renders
 stability criteria but not precise eigenvalues.
 
 
-We can formulate a lumped parameter treatment by supposing that we
-can combine the two different perturbations of the ion force arising from
+We can formulate a lumped parameter treatment by supposing that we can
+combine the two different perturbations of the ion force arising from
 the coefficients $\delta F/\delta x$ and $dF/dv_h=dF/d\dot x$ into a
 second order system:
-$M\dot v_h= M\ddot x = (\delta F/\delta x) x + (dF/d\dot x) \dot x$,
-which has the form:
+$M\dot v_h= M\ddot x = -(\delta F/\delta x) x - (dF/d\dot x) \dot x$,
+(recalling that $F$ is the force on the particles, which is minus the
+force on the hole). It has the form
 \begin{equation}
   \label{eq:harmosc}
   \ddot x +{dF\over Md\dot x}\dot x+{\delta F\over M\delta x} x= \ddot x+
@@ -749,23 +801,25 @@ self-consistently the form of the electron hole potential
 $\phi(x)$. For symmetric distributions, in principle we could choose
 it to be whatever we like and find the required self-consistent
 trapped electron distribution through the integral equation analysis
-of Bernstein, Greene, and Kruskal\cite{Bernstein1957,Hutchinson2017}. Since here we
-are calculating the effects on a known potential of the interaction
-with the ions, it is sufficient just to prescribe the potential,
-especially since as noted in section \ref{section2.3} the detailed
-shape of the potential has only a rather weak effect. However, for
-asymmetric ion distributions and finite hole peak potential $\psi$, it
-is no longer the case that the ion density is the same on the two
-sides of the electron hole. Therefore it is far from obvious that the
-potential need be the same on the two sides either. When it is not and
+of Bernstein, Greene, and
+Kruskal\cite{Bernstein1957,Hutchinson2017}. Since here we are
+calculating the effects on a known potential of the interaction with
+the ions, it is sufficient just to prescribe the potential, especially
+since as noted in section \ref{section2.3} the detailed shape of the
+potential has only a rather weak effect. However, for asymmetric ion
+distributions and finite hole peak potential $\psi$, it is no longer
+the case that the ion density is the same on the two sides of the
+electron hole. Therefore it is far from obvious that the potential
+need be the same on the two sides either. When it is not and
 $\phi_\infty$ is different for $\pm\sigma_x$, the potential structure
 has the form of a non-monotonic double layer\cite{Raadu1989} and many
 additional complexities arise, which it is not the purpose to address
 here. Therefore we continue by setting aside these complications,
 assuming a symmetric potential form $\phi(x)\propto{\rm sech}^4x$ and
 limiting the applicability of the present result to electron holes or
-other structures that have negligible net potential drop across them,
-which will be formally justified if the peak potential is small.
+other structures that have negligible net potential drop across them.
+Detailed analysis, in preparation for a future publication, shows that
+this is a good approximation.
 
 The specific distribution shapes considered here are adequately
 represented by the sum of two Maxwellian components shifted from each
@@ -988,16 +1042,24 @@ second component, whose temperature is $T_2$. Thus $n_2$ and $T_2$
 together determine the shape of the distribution, because the
 component velocity separation $2|v_b|$ is found by the process
 described in section \ref{3.2}. In other words $|v_b|$ is taken to be
-the minimum that allows the persistence of an electron hole. Fig.\
-\ref{fig:thresh}(a) is for a large amplitude hole $\psi=0.5$ which
-requires substantially deeper minimum in the distribution (larger
-$|v_b|$ and hence less stable) than Fig.\ \ref{fig:thresh}(b). The
-value $\psi=0.1$ (b) is representative of small $\psi$. The
-uncertainty level of perhaps a few percent in the threshold away from
-the sharp cliff probably arises from the discrete velocity meshes and
-from the relatively coarse parameter mesh $20\times 20$.  Since large
-$T_{threshold}$ occurs for some regions, contours are not shown above
-$T_{threshold}=10$ (a) or 20 (b).
+the minimum that allows the persistence of an electron hole. \emph{That} beam
+separation is never large enough that the purely
+one-dimensional ion-ion mode is more stable than the obliquely
+propagating mode (which can happen for large
+$|v_b|$\cite{Forslund1970a}); so if the ion distribution is stable by
+the one-dimensional analysis, it is stable to all unmagnetized
+electrostatic ion-ion modes.
+
+
+Fig.\ \ref{fig:thresh}(a) is for a large amplitude hole $\psi=0.5$
+which requires substantially deeper minimum in the distribution
+(larger $|v_b|$ and hence less stable) than Fig.\
+\ref{fig:thresh}(b). The value $\psi=0.1$ (b) is representative of
+small $\psi$. The uncertainty level of perhaps a few percent in the
+threshold away from the sharp cliff probably arises from the discrete
+velocity meshes and from the relatively coarse parameter mesh
+$20\times 20$.  Since large $T_{threshold}$ occurs for some regions,
+contours are not shown above $T_{threshold}=10$ (a) or 20 (b).
 
 At the rather large (and hence more
 unstable) amplitude $\psi=0.5$ (a), even for unusually small $T_2$ no
@@ -1029,19 +1091,19 @@ peak and negative in the wings, as is required for a
 soliton. Therefore is seems that persistent, slow, positive, solitary
 potential structures must be sustained primarily by trapped electron
 deficit. That is, they must be electron holes. And their velocity must
-lie in a local minimum in the ion velocity distribution. It is not
+lie within a local minimum in the ion velocity distribution. It is not
 impossible that slow electron holes might be observed as they form, or
 shortly afterwards, in ion distributions that do not possess the local
 minimum found here. But they would be expected to be unstable, and so
 rapidly be self-accelerated to speeds that are no longer slow.
 
 All of the analysis presented here is purely one-dimensional. However,
-it seems possible that the ion coupling effects explored also have a
-significant effect on the multidimensional transverse stability of
-electron holes, quite possibly helping to stabilize it. If so, then
-slow electron holes might prove to have different typical transverse
-sizes than fast electron holes, or even to persist at lower magnetic
-field strengths. 
+it seems possible that the ion coupling effects explored might also
+have a significant effect on the multidimensional transverse stability
+of electron holes, by altering the force-balance that determines
+it\cite{Hutchinson2019}. If so, which is a possible topic for future
+analysis, they might have different typical transverse sizes than fast
+electron holes, or even persist at lower magnetic field strengths.
 
 \section*{Acknowledgements}
 

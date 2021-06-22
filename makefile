@@ -23,6 +23,9 @@ OBJECTS=
 % : %.f90  makefile $(ACCISX) $(OBJECTS) $(LIBDEPS);
 	$(FORTRAN)  -o $* $(COMPILE-SWITCHES) $*.f90 $(OBJECTS) $(LIBPATH) $(LIBRARIES)
 
+% : %.f  makefile $(ACCISX) $(OBJECTS) $(LIBDEPS);
+	$(FORTRAN)  -o $* $(COMPILE-SWITCHES) $*.f $(OBJECTS) $(LIBPATH) $(LIBRARIES)
+
 # Defeat the Modula-2 make booby-trap.
 % : %.mod
 

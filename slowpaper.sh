@@ -3,9 +3,9 @@
 # The contour plots take about half an hour; so be patient.
 
 make iondenofphi
-make contribs
+make contribs2
 
-./contribs
+./contribs2
 mv plot0001.ps contribs.ps
 epstopdf contribs.ps
 
@@ -54,3 +54,8 @@ mv plot0401.ps contpsi1.ps
 epstopdf  contpsi1.ps
 
 rm *.ps
+
+Schematic figure
+./electronholeorbits
+mv plot0001.ps electronholeorbits.ps
+epstopdf electronholeorbits.ps
